@@ -2839,10 +2839,25 @@ int FLAG_B;
 uint8_t VAL_READ;
 
 void __attribute__((picinterrupt(("")))) isr(void){
-   if(SSPIF == 1)
+   if(SSPIF == 1 && FLAG_B == 0)
    {
         VAL_READ = spiRead();
+        spiWrite('A');
+        _delay((unsigned long)((1)*(4000000/4000.0)));
+        VAL_READ = spiRead();
         spiWrite(ADRESH);
+
+        SSPIF = 0;
+    }
+
+   if(SSPIF == 1 && FLAG_B == 1){
+        VAL_READ = spiRead();
+        spiWrite('C');
+        _delay((unsigned long)((1)*(4000000/4000.0)));
+        VAL_READ = spiRead();
+        spiWrite(CONT);
+
+        FLAG_B = 0;
         SSPIF = 0;
     }
 

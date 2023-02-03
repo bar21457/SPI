@@ -61,6 +61,9 @@ void main(void) {
   
     setup();
     
+    uint8_t VAL_READ;
+    uint8_t VAL_W;
+    
     uint8_t VAL1;
     uint8_t VAL1_U;
     uint8_t VAL1_D;
@@ -93,9 +96,8 @@ void main(void) {
        PORTCbits.RC1 = 0;       //Slave1 Select
        __delay_ms(1);
       
-       spiWrite(PORTD);
+       spiWrite(VAL_READ);
        VAL1 = spiRead();
-       PORTB = VAL1;
        
        __delay_ms(1);
        PORTCbits.RC1 = 1;       //Slave1 Deselect
@@ -119,9 +121,20 @@ void main(void) {
       PORTCbits.RC2 = 0;       //Slave2 Select
        __delay_ms(1);
       
-       spiWrite(PORTD);
-       VAL2 = spiRead();
-       PORTB = VAL2;
+       spiWrite(VAL_READ);
+       VAL_W = spiRead();
+       
+       if (VAL_W == 'A')
+       {
+           spiWrite(VAL_READ);
+           VAL2 = spiRead();
+       }
+       
+       if (VAL_W == 'C')
+       {
+           spiWrite(VAL_READ);
+           CONT = spiRead();
+       }
        
        __delay_ms(1);
        PORTCbits.RC2 = 1;       //Slave2 Deselect
@@ -141,6 +154,22 @@ void main(void) {
       sprintf(ADC2, "%u", VAL2_U);
       Lcd_Set_Cursor_4bits(2,9);
       Lcd_Write_String_4bits(ADC2);
+      
+      CONT_C = (CONT/100);
+      CONT_D = (CONT/10)%10;
+      CONT_U = CONT%10;
+       
+      sprintf(CONT_S, "%u", CONT_C);
+      Lcd_Set_Cursor_4bits(2,13);
+      Lcd_Write_String_4bits(CONT_S);
+      
+      sprintf(CONT_S, "%u", CONT_D);
+      Lcd_Set_Cursor_4bits(2,14);
+      Lcd_Write_String_4bits(CONT_S);
+      
+      sprintf(CONT_S, "%u", CONT_U);
+      Lcd_Set_Cursor_4bits(2,15);
+      Lcd_Write_String_4bits(CONT_S);
       
     }
     return;

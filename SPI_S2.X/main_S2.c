@@ -55,10 +55,25 @@ int FLAG_B;
 uint8_t VAL_READ;
 
 void __interrupt() isr(void){
-   if(SSPIF == 1)
+   if(SSPIF == 1 && FLAG_B == 0)
    {
         VAL_READ = spiRead();
+        spiWrite('A');
+        __delay_ms(1);
+        VAL_READ = spiRead();
         spiWrite(ADRESH);
+        
+        SSPIF = 0;
+    }
+   
+   if(SSPIF == 1 && FLAG_B == 1){
+        VAL_READ = spiRead();
+        spiWrite('C');
+        __delay_ms(1);
+        VAL_READ = spiRead();
+        spiWrite(CONT);
+        
+        FLAG_B = 0;
         SSPIF = 0;
     }
    
