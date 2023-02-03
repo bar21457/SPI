@@ -2855,7 +2855,13 @@ void main(void) {
     uint8_t VAL1_D;
     uint8_t VAL1_C;
 
+    uint8_t VAL2;
+    uint8_t VAL2_U;
+    uint8_t VAL2_D;
+    uint8_t VAL2_C;
+
     char ADC1[9];
+    char ADC2[9];
 
     Lcd_Clear_4bits();
     Lcd_Set_Cursor_4bits(1,1);
@@ -2867,7 +2873,7 @@ void main(void) {
 
     while(1)
     {
-       PORTCbits.RC2 = 0;
+       PORTCbits.RC1 = 0;
        _delay((unsigned long)((1)*(4000000/4000.0)));
 
        spiWrite(PORTD);
@@ -2875,7 +2881,7 @@ void main(void) {
        PORTB = VAL1;
 
        _delay((unsigned long)((1)*(4000000/4000.0)));
-       PORTCbits.RC2 = 1;
+       PORTCbits.RC1 = 1;
 
       VAL1_C = (VAL1/100);
       VAL1_D = (VAL1/10)%10;
@@ -2892,6 +2898,32 @@ void main(void) {
       sprintf(ADC1, "%u", VAL1_U);
       Lcd_Set_Cursor_4bits(2,3);
       Lcd_Write_String_4bits(ADC1);
+
+      PORTCbits.RC2 = 0;
+       _delay((unsigned long)((1)*(4000000/4000.0)));
+
+       spiWrite(PORTD);
+       VAL2 = spiRead();
+       PORTB = VAL2;
+
+       _delay((unsigned long)((1)*(4000000/4000.0)));
+       PORTCbits.RC2 = 1;
+
+      VAL2_C = (VAL2/100);
+      VAL2_D = (VAL2/10)%10;
+      VAL2_U = VAL2%10;
+
+      sprintf(ADC2, "%u", VAL2_C);
+      Lcd_Set_Cursor_4bits(2,7);
+      Lcd_Write_String_4bits(ADC2);
+
+      sprintf(ADC2, "%u", VAL2_D);
+      Lcd_Set_Cursor_4bits(2,8);
+      Lcd_Write_String_4bits(ADC2);
+
+      sprintf(ADC2, "%u", VAL2_U);
+      Lcd_Set_Cursor_4bits(2,9);
+      Lcd_Write_String_4bits(ADC2);
 
     }
     return;
@@ -2915,6 +2947,8 @@ void setup (void){
     Lcd_Init_4bits();
 
 
+    TRISC1 = 0;
+    PORTCbits.RC1 = 1;
     TRISC2 = 0;
     PORTCbits.RC2 = 1;
     spiInit(SPI_MASTER_OSC_DIV4, SPI_DATA_SAMPLE_MIDDLE, SPI_CLOCK_IDLE_LOW, SPI_IDLE_2_ACTIVE);

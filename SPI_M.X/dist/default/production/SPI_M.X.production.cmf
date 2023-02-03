@@ -11,34 +11,34 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\byron\AppData\Local\Temp\xcAs42c.o
+$C:\Users\byron\AppData\Local\Temp\xcAspi4.o
 idloc IDLOC 5 2000 2000 4 2 1
 end_init CODE 0 0 0 3 2 1
 config CONFIG 4 2007 2007 2 2 1
 $dist/default/production\SPI_M.X.production.o
 cinit CODE 0 7FC 7FC 4 2 1
 idloc IDLOC 5 2000 2000 4 2 1
-text1 CODE 0 625 625 C1 2 1
-text2 CODE 0 400 400 3A 2 1
-text3 CODE 0 47C 47C 44 2 1
-text4 CODE 0 322 322 6 2 1
-text5 CODE 0 32F 32F 9 2 1
-text6 CODE 0 328 328 7 2 1
-text7 CODE 0 3A4 3A4 27 2 1
-text8 CODE 0 352 352 16 2 1
-text9 CODE 0 345 345 D 2 1
-text10 CODE 0 561 561 5D 2 1
-text11 CODE 0 506 506 5B 2 1
-text12 CODE 0 5BE 5BE 67 2 1
-text13 CODE 0 43A 43A 42 2 1
-text14 CODE 0 3CB 3CB 35 2 1
-text15 CODE 0 4C0 4C0 46 2 1
-text16 CODE 0 338 338 D 2 1
-text17 CODE 0 368 368 1A 2 1
-text18 CODE 0 382 382 22 2 1
-maintext CODE 0 6E6 6E6 116 2 1
+text1 CODE 0 550 550 C1 2 1
+text2 CODE 0 32B 32B 3A 2 1
+text3 CODE 0 3A7 3A7 44 2 1
+text4 CODE 0 247 247 6 2 1
+text5 CODE 0 254 254 9 2 1
+text6 CODE 0 24D 24D 7 2 1
+text7 CODE 0 2C9 2C9 2D 2 1
+text8 CODE 0 277 277 16 2 1
+text9 CODE 0 26A 26A D 2 1
+text10 CODE 0 48C 48C 5D 2 1
+text11 CODE 0 431 431 5B 2 1
+text12 CODE 0 4E9 4E9 67 2 1
+text13 CODE 0 365 365 42 2 1
+text14 CODE 0 2F6 2F6 35 2 1
+text15 CODE 0 3EB 3EB 46 2 1
+text16 CODE 0 25D 25D D 2 1
+text17 CODE 0 28D 28D 1A 2 1
+text18 CODE 0 2A7 2A7 22 2 1
+maintext CODE 0 611 611 1EB 2 1
 cstackCOMMON COMMON 1 70 70 E 1 1
-cstackBANK0 BANK0 1 20 20 1C 1 1
+cstackBANK0 BANK0 1 20 20 29 1 1
 strings STRING 0 3 3 29 2 1
 config CONFIG 4 2007 2007 2 2 1
 # %UNUSED Section
@@ -47,28 +47,28 @@ config CONFIG 4 2007 2007 2 2 1
 #    <class name> <range> <delta>
 # Addresses given in the range are in hexadecimal and units of delta.
 %UNUSED
-RAM 3C-6F 1
+RAM 49-6F 1
 RAM A0-EF 1
 RAM 110-16F 1
 RAM 190-1EF 1
-BANK0 3C-6F 1
+BANK0 49-6F 1
 BANK1 A0-EF 1
 BANK2 110-16F 1
 BANK3 190-1EF 1
-CONST 2C-321 2
+CONST 2C-246 2
 CONST 800-1FFF 2
-ENTRY 2C-321 2
+ENTRY 2C-246 2
 ENTRY 800-1FFF 2
-CODE 2C-321 2
+CODE 2C-246 2
 CODE 800-1FFF 2
 SFR0 0-1F 1
 SFR1 80-9F 1
 SFR2 100-10F 1
 SFR3 180-18F 1
 EEDATA 2100-21FF 2
-STRCODE 2C-321 2
+STRCODE 2C-246 2
 STRCODE 800-1FFF 2
-STRING 2C-321 2
+STRING 2C-246 2
 STRING 800-1FFF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
@@ -84,304 +84,325 @@ STRING 800-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\SPI_M.X.production.o
-7FC cinit CODE >1026:C:\Users\byron\AppData\Local\Temp\xcAs42c.s
-7FC cinit CODE >1029:C:\Users\byron\AppData\Local\Temp\xcAs42c.s
-7FC cinit CODE >1035:C:\Users\byron\AppData\Local\Temp\xcAs42c.s
-7FC cinit CODE >1037:C:\Users\byron\AppData\Local\Temp\xcAs42c.s
-7FD cinit CODE >1038:C:\Users\byron\AppData\Local\Temp\xcAs42c.s
-382 text18 CODE >14:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-383 text18 CODE >15:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-387 text18 CODE >16:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-38B text18 CODE >17:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-38B text18 CODE >18:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-38E text18 CODE >20:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-392 text18 CODE >21:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-394 text18 CODE >22:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-394 text18 CODE >23:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-395 text18 CODE >25:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-399 text18 CODE >26:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-39B text18 CODE >27:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-39B text18 CODE >28:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-39C text18 CODE >30:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-3A0 text18 CODE >31:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-3A2 text18 CODE >32:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-3A2 text18 CODE >33:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-3A3 text18 CODE >34:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-368 text17 CODE >36:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-369 text17 CODE >37:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-36C text17 CODE >38:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-372 text17 CODE >39:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-375 text17 CODE >40:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-37E text17 CODE >41:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-381 text17 CODE >42:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-338 text16 CODE >44:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-338 text16 CODE >45:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-33E text16 CODE >46:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-344 text16 CODE >47:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-4C0 text15 CODE >49:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-4C1 text15 CODE >51:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-4C6 text15 CODE >52:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-4C9 text15 CODE >53:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-4CC text15 CODE >53:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-4CF text15 CODE >53:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-4D3 text15 CODE >54:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-4D6 text15 CODE >55:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-4DC text15 CODE >56:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-4E2 text15 CODE >57:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-4E9 text15 CODE >58:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-4EC text15 CODE >59:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-4EF text15 CODE >59:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-4F2 text15 CODE >59:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-4F6 text15 CODE >60:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-4F9 text15 CODE >61:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-4FF text15 CODE >62:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-505 text15 CODE >64:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-3CB text14 CODE >84:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-3CC text14 CODE >86:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-3CF text14 CODE >87:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-3D2 text14 CODE >88:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-3D5 text14 CODE >89:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-3D8 text14 CODE >89:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-3DB text14 CODE >89:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-3E3 text14 CODE >90:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-3E6 text14 CODE >91:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-3EB text14 CODE >92:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-3EE text14 CODE >93:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-3F4 text14 CODE >94:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-3F7 text14 CODE >95:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-3FC text14 CODE >96:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-3FF text14 CODE >97:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-43A text13 CODE >99:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-43A text13 CODE >101:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-43D text13 CODE >102:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-442 text13 CODE >102:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-45B text13 CODE >102:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-464 text13 CODE >102:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-477 text13 CODE >102:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-47B text13 CODE >103:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-5BE text12 CODE >5:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-5BE text12 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-5BF text12 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-5C3 text12 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-5C6 text12 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-5C8 text12 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-5CA text12 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-5CE text12 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-5D1 text12 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-5D3 text12 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-5D7 text12 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-5D9 text12 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-5DF text12 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-5E1 text12 CODE >25:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-5E2 text12 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-5E3 text12 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-5E7 text12 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-5E9 text12 CODE >27:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-5ED text12 CODE >25:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-5F1 text12 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-5F2 text12 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-5F6 text12 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-5F8 text12 CODE >31:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-5FA text12 CODE >31:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-5FE text12 CODE >31:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-602 text12 CODE >32:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-605 text12 CODE >32:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-608 text12 CODE >33:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-609 text12 CODE >35:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-60A text12 CODE >35:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-60E text12 CODE >35:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-610 text12 CODE >36:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-616 text12 CODE >38:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-61B text12 CODE >39:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-61E text12 CODE >39:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-620 text12 CODE >40:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-624 text12 CODE >41:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-506 text11 CODE >5:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-506 text11 CODE >12:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-509 text11 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-50D text11 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-510 text11 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-512 text11 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-514 text11 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-518 text11 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-51B text11 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-51D text11 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-523 text11 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-525 text11 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-526 text11 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-527 text11 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-52B text11 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-52D text11 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-531 text11 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-535 text11 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-537 text11 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-53B text11 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-53F text11 CODE >27:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-542 text11 CODE >27:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-545 text11 CODE >28:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-546 text11 CODE >28:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-54A text11 CODE >28:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-54C text11 CODE >29:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-552 text11 CODE >31:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-557 text11 CODE >32:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-55A text11 CODE >32:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-55C text11 CODE >33:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-560 text11 CODE >34:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-561 text10 CODE >66:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-561 text10 CODE >67:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-567 text10 CODE >68:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-570 text10 CODE >69:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-576 text10 CODE >70:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-57F text10 CODE >71:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-585 text10 CODE >72:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-58D text10 CODE >73:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-593 text10 CODE >75:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-599 text10 CODE >76:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-59F text10 CODE >77:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-5A5 text10 CODE >78:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-5AB text10 CODE >79:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-5B1 text10 CODE >80:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-5B7 text10 CODE >81:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-5BD text10 CODE >82:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
-345 text9 CODE >11:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configINTOSC.c
-346 text9 CODE >13:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configINTOSC.c
-350 text9 CODE >14:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configINTOSC.c
-351 text9 CODE >15:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configINTOSC.c
-352 text8 CODE >12:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configSPI.c
-353 text8 CODE >14:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configSPI.c
-356 text8 CODE >15:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configSPI.c
-35A text8 CODE >17:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configSPI.c
-35C text8 CODE >18:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configSPI.c
-35D text8 CODE >19:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configSPI.c
-35E text8 CODE >22:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configSPI.c
-361 text8 CODE >23:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configSPI.c
-362 text8 CODE >24:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configSPI.c
-362 text8 CODE >26:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configSPI.c
-367 text8 CODE >27:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configSPI.c
-3A4 text7 CODE >114:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
-3A4 text7 CODE >116:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
-3A7 text7 CODE >117:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
-3A8 text7 CODE >119:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
-3AB text7 CODE >120:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
-3AC text7 CODE >122:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
-3AF text7 CODE >123:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
-3B0 text7 CODE >125:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
-3B6 text7 CODE >126:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
-3BB text7 CODE >129:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
-3BE text7 CODE >130:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
-3C1 text7 CODE >131:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
-3CA text7 CODE >133:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
-328 text6 CODE >29:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configSPI.c
-328 text6 CODE >31:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configSPI.c
-32E text6 CODE >32:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configSPI.c
-32F text5 CODE >47:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configSPI.c
-32F text5 CODE >49:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configSPI.c
-334 text5 CODE >50:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configSPI.c
-337 text5 CODE >51:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configSPI.c
-322 text4 CODE >34:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configSPI.c
-323 text4 CODE >36:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configSPI.c
-327 text4 CODE >37:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configSPI.c
-47C text3 CODE >5:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-47C text3 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-47E text3 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-484 text3 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-486 text3 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-487 text3 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-488 text3 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-48C text3 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-48E text3 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-492 text3 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-496 text3 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-497 text3 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-49B text3 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-49D text3 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-49F text3 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-4A3 text3 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-4A7 text3 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-4AA text3 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-4AD text3 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-4AE text3 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-4AF text3 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-4B3 text3 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-4B5 text3 CODE >27:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-4BB text3 CODE >29:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-4BF text3 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-400 text2 CODE >5:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-400 text2 CODE >12:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-406 text2 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-408 text2 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-409 text2 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-40A text2 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-40E text2 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-410 text2 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-414 text2 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-418 text2 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-41A text2 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-41E text2 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-422 text2 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-425 text2 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-428 text2 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-429 text2 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-42D text2 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-42F text2 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-435 text2 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-439 text2 CODE >25:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-625 text1 CODE >505:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-628 text1 CODE >550:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-62A text1 CODE >553:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-62B text1 CODE >555:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-631 text1 CODE >558:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-63A text1 CODE >559:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-63B text1 CODE >565:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-63C text1 CODE >661:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-63D text1 CODE >844:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-641 text1 CODE >845:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-642 text1 CODE >848:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-651 text1 CODE >848:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-656 text1 CODE >848:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-659 text1 CODE >848:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-65C text1 CODE >1312:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-668 text1 CODE >1331:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-66A text1 CODE >1332:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-67D text1 CODE >1332:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-681 text1 CODE >1332:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-686 text1 CODE >1333:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-690 text1 CODE >1498:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-692 text1 CODE >1500:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-693 text1 CODE >1515:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-6BF text1 CODE >1550:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-6C8 text1 CODE >1500:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-6D1 text1 CODE >553:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-6E1 text1 CODE >1564:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-6E5 text1 CODE >1567:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-6E6 maintext CODE >60:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
-6E6 maintext CODE >62:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
-6EB maintext CODE >71:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
-6F0 maintext CODE >72:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
-6F8 maintext CODE >73:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
-701 maintext CODE >74:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
-709 maintext CODE >75:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
-712 maintext CODE >76:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
-71A maintext CODE >77:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
-723 maintext CODE >81:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
-726 maintext CODE >82:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
-72E maintext CODE >84:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
-736 maintext CODE >85:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
-73E maintext CODE >86:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
-740 maintext CODE >88:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
-748 maintext CODE >89:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
-74B maintext CODE >91:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
-75F maintext CODE >92:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
-780 maintext CODE >93:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
-794 maintext CODE >95:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
-7A3 maintext CODE >96:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
-7AB maintext CODE >97:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
-7B4 maintext CODE >99:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
-7C5 maintext CODE >100:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
-7CD maintext CODE >101:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
-7D6 maintext CODE >103:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
-7E7 maintext CODE >104:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
-7EF maintext CODE >105:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+7FC cinit CODE >1031:C:\Users\byron\AppData\Local\Temp\xcAspi4.s
+7FC cinit CODE >1034:C:\Users\byron\AppData\Local\Temp\xcAspi4.s
+7FC cinit CODE >1040:C:\Users\byron\AppData\Local\Temp\xcAspi4.s
+7FC cinit CODE >1042:C:\Users\byron\AppData\Local\Temp\xcAspi4.s
+7FD cinit CODE >1043:C:\Users\byron\AppData\Local\Temp\xcAspi4.s
+2A7 text18 CODE >14:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+2A8 text18 CODE >15:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+2AC text18 CODE >16:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+2B0 text18 CODE >17:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+2B0 text18 CODE >18:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+2B3 text18 CODE >20:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+2B7 text18 CODE >21:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+2B9 text18 CODE >22:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+2B9 text18 CODE >23:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+2BA text18 CODE >25:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+2BE text18 CODE >26:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+2C0 text18 CODE >27:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+2C0 text18 CODE >28:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+2C1 text18 CODE >30:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+2C5 text18 CODE >31:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+2C7 text18 CODE >32:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+2C7 text18 CODE >33:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+2C8 text18 CODE >34:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+28D text17 CODE >36:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+28E text17 CODE >37:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+291 text17 CODE >38:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+297 text17 CODE >39:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+29A text17 CODE >40:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+2A3 text17 CODE >41:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+2A6 text17 CODE >42:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+25D text16 CODE >44:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+25D text16 CODE >45:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+263 text16 CODE >46:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+269 text16 CODE >47:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+3EB text15 CODE >49:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+3EC text15 CODE >51:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+3F1 text15 CODE >52:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+3F4 text15 CODE >53:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+3F7 text15 CODE >53:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+3FA text15 CODE >53:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+3FE text15 CODE >54:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+401 text15 CODE >55:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+407 text15 CODE >56:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+40D text15 CODE >57:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+414 text15 CODE >58:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+417 text15 CODE >59:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+41A text15 CODE >59:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+41D text15 CODE >59:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+421 text15 CODE >60:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+424 text15 CODE >61:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+42A text15 CODE >62:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+430 text15 CODE >64:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+2F6 text14 CODE >84:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+2F7 text14 CODE >86:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+2FA text14 CODE >87:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+2FD text14 CODE >88:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+300 text14 CODE >89:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+303 text14 CODE >89:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+306 text14 CODE >89:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+30E text14 CODE >90:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+311 text14 CODE >91:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+316 text14 CODE >92:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+319 text14 CODE >93:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+31F text14 CODE >94:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+322 text14 CODE >95:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+327 text14 CODE >96:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+32A text14 CODE >97:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+365 text13 CODE >99:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+365 text13 CODE >101:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+368 text13 CODE >102:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+36D text13 CODE >102:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+386 text13 CODE >102:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+38F text13 CODE >102:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+3A2 text13 CODE >102:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+3A6 text13 CODE >103:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+4E9 text12 CODE >5:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+4E9 text12 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+4EA text12 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+4EE text12 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+4F1 text12 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+4F3 text12 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+4F5 text12 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+4F9 text12 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+4FC text12 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+4FE text12 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+502 text12 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+504 text12 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+50A text12 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+50C text12 CODE >25:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+50D text12 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+50E text12 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+512 text12 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+514 text12 CODE >27:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+518 text12 CODE >25:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+51C text12 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+51D text12 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+521 text12 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+523 text12 CODE >31:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+525 text12 CODE >31:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+529 text12 CODE >31:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+52D text12 CODE >32:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+530 text12 CODE >32:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+533 text12 CODE >33:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+534 text12 CODE >35:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+535 text12 CODE >35:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+539 text12 CODE >35:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+53B text12 CODE >36:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+541 text12 CODE >38:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+546 text12 CODE >39:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+549 text12 CODE >39:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+54B text12 CODE >40:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+54F text12 CODE >41:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+431 text11 CODE >5:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+431 text11 CODE >12:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+434 text11 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+438 text11 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+43B text11 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+43D text11 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+43F text11 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+443 text11 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+446 text11 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+448 text11 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+44E text11 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+450 text11 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+451 text11 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+452 text11 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+456 text11 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+458 text11 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+45C text11 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+460 text11 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+462 text11 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+466 text11 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+46A text11 CODE >27:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+46D text11 CODE >27:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+470 text11 CODE >28:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+471 text11 CODE >28:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+475 text11 CODE >28:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+477 text11 CODE >29:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+47D text11 CODE >31:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+482 text11 CODE >32:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+485 text11 CODE >32:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+487 text11 CODE >33:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+48B text11 CODE >34:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+48C text10 CODE >66:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+48C text10 CODE >67:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+492 text10 CODE >68:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+49B text10 CODE >69:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+4A1 text10 CODE >70:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+4AA text10 CODE >71:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+4B0 text10 CODE >72:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+4B8 text10 CODE >73:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+4BE text10 CODE >75:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+4C4 text10 CODE >76:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+4CA text10 CODE >77:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+4D0 text10 CODE >78:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+4D6 text10 CODE >79:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+4DC text10 CODE >80:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+4E2 text10 CODE >81:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+4E8 text10 CODE >82:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
+26A text9 CODE >11:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configINTOSC.c
+26B text9 CODE >13:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configINTOSC.c
+275 text9 CODE >14:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configINTOSC.c
+276 text9 CODE >15:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configINTOSC.c
+277 text8 CODE >12:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configSPI.c
+278 text8 CODE >14:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configSPI.c
+27B text8 CODE >15:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configSPI.c
+27F text8 CODE >17:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configSPI.c
+281 text8 CODE >18:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configSPI.c
+282 text8 CODE >19:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configSPI.c
+283 text8 CODE >22:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configSPI.c
+286 text8 CODE >23:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configSPI.c
+287 text8 CODE >24:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configSPI.c
+287 text8 CODE >26:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configSPI.c
+28C text8 CODE >27:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configSPI.c
+2C9 text7 CODE >146:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+2C9 text7 CODE >148:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+2CC text7 CODE >149:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+2CD text7 CODE >151:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+2D0 text7 CODE >152:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+2D1 text7 CODE >154:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+2D4 text7 CODE >155:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+2D5 text7 CODE >157:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+2DB text7 CODE >158:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+2E0 text7 CODE >161:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+2E3 text7 CODE >162:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+2E6 text7 CODE >163:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+2E9 text7 CODE >164:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+2EC text7 CODE >165:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+2F5 text7 CODE >167:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+24D text6 CODE >29:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configSPI.c
+24D text6 CODE >31:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configSPI.c
+253 text6 CODE >32:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configSPI.c
+254 text5 CODE >47:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configSPI.c
+254 text5 CODE >49:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configSPI.c
+259 text5 CODE >50:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configSPI.c
+25C text5 CODE >51:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configSPI.c
+247 text4 CODE >34:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configSPI.c
+248 text4 CODE >36:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configSPI.c
+24C text4 CODE >37:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configSPI.c
+3A7 text3 CODE >5:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+3A7 text3 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+3A9 text3 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+3AF text3 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+3B1 text3 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+3B2 text3 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+3B3 text3 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+3B7 text3 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+3B9 text3 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+3BD text3 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+3C1 text3 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+3C2 text3 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+3C6 text3 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+3C8 text3 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+3CA text3 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+3CE text3 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+3D2 text3 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+3D5 text3 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+3D8 text3 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+3D9 text3 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+3DA text3 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+3DE text3 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+3E0 text3 CODE >27:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+3E6 text3 CODE >29:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+3EA text3 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+32B text2 CODE >5:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+32B text2 CODE >12:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+331 text2 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+333 text2 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+334 text2 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+335 text2 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+339 text2 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+33B text2 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+33F text2 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+343 text2 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+345 text2 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+349 text2 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+34D text2 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+350 text2 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+353 text2 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+354 text2 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+358 text2 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+35A text2 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+360 text2 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+364 text2 CODE >25:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+550 text1 CODE >505:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+553 text1 CODE >550:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+555 text1 CODE >553:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+556 text1 CODE >555:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+55C text1 CODE >558:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+565 text1 CODE >559:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+566 text1 CODE >565:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+567 text1 CODE >661:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+568 text1 CODE >844:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+56C text1 CODE >845:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+56D text1 CODE >848:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+57C text1 CODE >848:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+581 text1 CODE >848:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+584 text1 CODE >848:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+587 text1 CODE >1312:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+593 text1 CODE >1331:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+595 text1 CODE >1332:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+5A8 text1 CODE >1332:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+5AC text1 CODE >1332:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+5B1 text1 CODE >1333:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+5BB text1 CODE >1498:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+5BD text1 CODE >1500:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+5BE text1 CODE >1515:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+5EA text1 CODE >1550:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+5F3 text1 CODE >1500:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+5FC text1 CODE >553:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+60C text1 CODE >1564:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+610 text1 CODE >1567:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+611 maintext CODE >60:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+611 maintext CODE >62:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+616 maintext CODE >77:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+61B maintext CODE >78:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+623 maintext CODE >79:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+62C maintext CODE >80:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+634 maintext CODE >81:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+63D maintext CODE >82:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+645 maintext CODE >83:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+64E maintext CODE >87:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+651 maintext CODE >88:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+659 maintext CODE >90:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+661 maintext CODE >91:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+669 maintext CODE >92:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+66B maintext CODE >94:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+673 maintext CODE >95:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+676 maintext CODE >97:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+68A maintext CODE >98:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+6AB maintext CODE >99:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+6BF maintext CODE >101:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+6CE maintext CODE >102:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+6D6 maintext CODE >103:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+6DF maintext CODE >105:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+6F0 maintext CODE >106:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+6F8 maintext CODE >107:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+701 maintext CODE >109:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+712 maintext CODE >110:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+71A maintext CODE >111:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+723 maintext CODE >113:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+726 maintext CODE >114:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+72E maintext CODE >116:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+736 maintext CODE >117:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+73E maintext CODE >118:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+740 maintext CODE >120:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+748 maintext CODE >121:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+74B maintext CODE >123:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+75F maintext CODE >124:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+780 maintext CODE >125:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+794 maintext CODE >127:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+7A3 maintext CODE >128:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+7AB maintext CODE >129:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+7B4 maintext CODE >131:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+7C5 maintext CODE >132:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+7CD maintext CODE >133:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+7D6 maintext CODE >135:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+7E7 maintext CODE >136:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+7EF maintext CODE >137:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -406,26 +427,26 @@ spiInit@sTransmitEdge 72 0 COMMON 1 cstackCOMMON dist/default/production\SPI_M.X
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
 Lcd_Port_4bits@a 70 0 COMMON 1 cstackCOMMON dist/default/production\SPI_M.X.production.o
 __Hstrings 0 0 ABS 0 strings -
-___sp 0 0 STACK 2 stack C:\Users\byron\AppData\Local\Temp\xcAs42c.o
-_main DCC 0 CODE 0 maintext dist/default/production\SPI_M.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\byron\AppData\Local\Temp\xcAspi4.o
+_main C22 0 CODE 0 maintext dist/default/production\SPI_M.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\SPI_M.X.production.o
-start 0 0 CODE 0 init C:\Users\byron\AppData\Local\Temp\xcAs42c.o
-__end_of_Lcd_Init_4bits B7C 0 CODE 0 text10 dist/default/production\SPI_M.X.production.o
-_Lcd_Clear_4bits 670 0 CODE 0 text16 dist/default/production\SPI_M.X.production.o
+start 0 0 CODE 0 init C:\Users\byron\AppData\Local\Temp\xcAspi4.o
+__end_of_Lcd_Init_4bits 9D2 0 CODE 0 text10 dist/default/production\SPI_M.X.production.o
+_Lcd_Clear_4bits 4BA 0 CODE 0 text16 dist/default/production\SPI_M.X.production.o
 __Hpowerup 0 0 CODE 0 powerup -
 ___awmod@sign 21 0 BANK0 1 cstackBANK0 dist/default/production\SPI_M.X.production.o
-_Lcd_Set_Cursor_4bits 980 0 CODE 0 text15 dist/default/production\SPI_M.X.production.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\byron\AppData\Local\Temp\xcAs42c.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\byron\AppData\Local\Temp\xcAs42c.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\byron\AppData\Local\Temp\xcAs42c.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\byron\AppData\Local\Temp\xcAs42c.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\byron\AppData\Local\Temp\xcAs42c.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\byron\AppData\Local\Temp\xcAs42c.o
-_setupINTOSC 68A 0 CODE 0 text9 dist/default/production\SPI_M.X.production.o
+_Lcd_Set_Cursor_4bits 7D6 0 CODE 0 text15 dist/default/production\SPI_M.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\byron\AppData\Local\Temp\xcAspi4.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\byron\AppData\Local\Temp\xcAspi4.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\byron\AppData\Local\Temp\xcAspi4.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\byron\AppData\Local\Temp\xcAspi4.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\byron\AppData\Local\Temp\xcAspi4.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\byron\AppData\Local\Temp\xcAspi4.o
+_setupINTOSC 4D4 0 CODE 0 text9 dist/default/production\SPI_M.X.production.o
 _OSCCONbits 8F 0 ABS 0 - dist/default/production\SPI_M.X.production.o
 wtemp0 7E 0 ABS 0 - dist/default/production\SPI_M.X.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
-_Lcd_Cmd_4bits 6D0 0 CODE 0 text17 dist/default/production\SPI_M.X.production.o
+_Lcd_Cmd_4bits 51A 0 CODE 0 text17 dist/default/production\SPI_M.X.production.o
 ___awdiv@sign 76 0 COMMON 1 cstackCOMMON dist/default/production\SPI_M.X.production.o
 __Hclrtext 0 0 ABS 0 clrtext -
 _ANSELH 189 0 ABS 0 - dist/default/production\SPI_M.X.production.o
@@ -435,12 +456,12 @@ setupINTOSC@F 71 0 COMMON 1 cstackCOMMON dist/default/production\SPI_M.X.product
 ___awdiv@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\SPI_M.X.production.o
 ___lwmod@divisor 78 0 COMMON 1 cstackCOMMON dist/default/production\SPI_M.X.production.o
 Lcd_Set_Cursor_4bits@temp 79 0 COMMON 1 cstackCOMMON dist/default/production\SPI_M.X.production.o
-__end_of___awdiv C4A 0 CODE 0 text12 dist/default/production\SPI_M.X.production.o
-__end_of___awmod AC2 0 CODE 0 text11 dist/default/production\SPI_M.X.production.o
-__end_of___lwdiv 980 0 CODE 0 text3 dist/default/production\SPI_M.X.production.o
-__end_of___lwmod 874 0 CODE 0 text2 dist/default/production\SPI_M.X.production.o
-___stackhi 0 0 ABS 0 - C:\Users\byron\AppData\Local\Temp\xcAs42c.o
-___stacklo 0 0 ABS 0 - C:\Users\byron\AppData\Local\Temp\xcAs42c.o
+__end_of___awdiv AA0 0 CODE 0 text12 dist/default/production\SPI_M.X.production.o
+__end_of___awmod 918 0 CODE 0 text11 dist/default/production\SPI_M.X.production.o
+__end_of___lwdiv 7D6 0 CODE 0 text3 dist/default/production\SPI_M.X.production.o
+__end_of___lwmod 6CA 0 CODE 0 text2 dist/default/production\SPI_M.X.production.o
+___stackhi 0 0 ABS 0 - C:\Users\byron\AppData\Local\Temp\xcAspi4.o
+___stacklo 0 0 ABS 0 - C:\Users\byron\AppData\Local\Temp\xcAspi4.o
 _dpowers 26 0 STRING 0 strings dist/default/production\SPI_M.X.production.o
 ___lwdiv@quotient 75 0 COMMON 1 cstackCOMMON dist/default/production\SPI_M.X.production.o
 ___lwmod@dividend 7A 0 COMMON 1 cstackCOMMON dist/default/production\SPI_M.X.production.o
@@ -451,10 +472,11 @@ Lcd_Write_String_4bits@i 7A 0 COMMON 1 cstackCOMMON dist/default/production\SPI_
 __pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\SPI_M.X.production.o
 _SSPBUF 13 0 ABS 0 - dist/default/production\SPI_M.X.production.o
 _SSPCON 14 0 ABS 0 - dist/default/production\SPI_M.X.production.o
+_TRISC1 439 0 ABS 0 - dist/default/production\SPI_M.X.production.o
 _TRISC2 43A 0 ABS 0 - dist/default/production\SPI_M.X.production.o
 _TRISC3 43B 0 ABS 0 - dist/default/production\SPI_M.X.production.o
 _TRISC5 43D 0 ABS 0 - dist/default/production\SPI_M.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\byron\AppData\Local\Temp\xcAs42c.o
+___int_sp 0 0 STACK 2 stack C:\Users\byron\AppData\Local\Temp\xcAspi4.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -466,12 +488,12 @@ __Hstack 0 0 STACK 2 stack -
 __stringbase 24 0 STRING 0 strings dist/default/production\SPI_M.X.production.o
 ___lwdiv@counter 77 0 COMMON 1 cstackCOMMON dist/default/production\SPI_M.X.production.o
 __Hmaintext 0 0 ABS 0 maintext -
-__end_of_spiInit 6D0 0 CODE 0 text8 dist/default/production\SPI_M.X.production.o
-__end_of_spiRead 670 0 CODE 0 text5 dist/default/production\SPI_M.X.production.o
-__end_of_sprintf DCC 0 CODE 0 text1 dist/default/production\SPI_M.X.production.o
+__end_of_spiInit 51A 0 CODE 0 text8 dist/default/production\SPI_M.X.production.o
+__end_of_spiRead 4BA 0 CODE 0 text5 dist/default/production\SPI_M.X.production.o
+__end_of_sprintf C22 0 CODE 0 text1 dist/default/production\SPI_M.X.production.o
 __Hcommon 0 0 ABS 0 common -
 __Hconfig 4012 0 CONFIG 4 config -
-__end_of_Lcd_Cmd_4bits 704 0 CODE 0 text17 dist/default/production\SPI_M.X.production.o
+__end_of_Lcd_Cmd_4bits 54E 0 CODE 0 text17 dist/default/production\SPI_M.X.production.o
 __Lbank0 0 0 ABS 0 bank0 -
 __Lbank1 0 0 ABS 0 bank1 -
 __Lbank2 0 0 ABS 0 bank2 -
@@ -502,44 +524,49 @@ __HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
 __S0 800 0 ABS 0 - -
 __S1 7E 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
-__end_of_Lcd_Write_Char_4bits 800 0 CODE 0 text14 dist/default/production\SPI_M.X.production.o
+__end_of_Lcd_Write_Char_4bits 656 0 CODE 0 text14 dist/default/production\SPI_M.X.production.o
 Lcd_Cmd_4bits@a 73 0 COMMON 1 cstackCOMMON dist/default/production\SPI_M.X.production.o
 sprintf@val 28 0 BANK0 1 cstackBANK0 dist/default/production\SPI_M.X.production.o
-__end_of_setupINTOSC 6A4 0 CODE 0 text9 dist/default/production\SPI_M.X.production.o
+__end_of_setupINTOSC 4EE 0 CODE 0 text9 dist/default/production\SPI_M.X.production.o
 __Lintentry 0 0 CODE 0 intentry -
 __stringtab 6 0 STRING 0 strings dist/default/production\SPI_M.X.production.o
-reset_vec 0 0 CODE 0 reset_vec C:\Users\byron\AppData\Local\Temp\xcAs42c.o
-main@VAL1_C 3A 0 BANK0 1 cstackBANK0 dist/default/production\SPI_M.X.production.o
-main@VAL1_D 39 0 BANK0 1 cstackBANK0 dist/default/production\SPI_M.X.production.o
-main@VAL1_U 38 0 BANK0 1 cstackBANK0 dist/default/production\SPI_M.X.production.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\byron\AppData\Local\Temp\xcAspi4.o
+main@VAL1_C 43 0 BANK0 1 cstackBANK0 dist/default/production\SPI_M.X.production.o
+main@VAL1_D 42 0 BANK0 1 cstackBANK0 dist/default/production\SPI_M.X.production.o
+main@VAL1_U 41 0 BANK0 1 cstackBANK0 dist/default/production\SPI_M.X.production.o
+main@VAL2_C 46 0 BANK0 1 cstackBANK0 dist/default/production\SPI_M.X.production.o
+main@VAL2_D 45 0 BANK0 1 cstackBANK0 dist/default/production\SPI_M.X.production.o
+main@VAL2_U 44 0 BANK0 1 cstackBANK0 dist/default/production\SPI_M.X.production.o
 ___awmod@counter 20 0 BANK0 1 cstackBANK0 dist/default/production\SPI_M.X.production.o
 sprintf@flag 26 0 BANK0 1 cstackBANK0 dist/default/production\SPI_M.X.production.o
 sprintf@prec 2A 0 BANK0 1 cstackBANK0 dist/default/production\SPI_M.X.production.o
-__ptext10 AC2 0 CODE 0 text10 dist/default/production\SPI_M.X.production.o
-__ptext11 A0C 0 CODE 0 text11 dist/default/production\SPI_M.X.production.o
-__ptext12 B7C 0 CODE 0 text12 dist/default/production\SPI_M.X.production.o
-__ptext13 874 0 CODE 0 text13 dist/default/production\SPI_M.X.production.o
-__ptext14 796 0 CODE 0 text14 dist/default/production\SPI_M.X.production.o
-__ptext15 980 0 CODE 0 text15 dist/default/production\SPI_M.X.production.o
-__ptext16 670 0 CODE 0 text16 dist/default/production\SPI_M.X.production.o
-__ptext17 6D0 0 CODE 0 text17 dist/default/production\SPI_M.X.production.o
-__ptext18 704 0 CODE 0 text18 dist/default/production\SPI_M.X.production.o
-___awdiv B7C 0 CODE 0 text12 dist/default/production\SPI_M.X.production.o
-___awmod A0C 0 CODE 0 text11 dist/default/production\SPI_M.X.production.o
-___lwdiv 8F8 0 CODE 0 text3 dist/default/production\SPI_M.X.production.o
-___lwmod 800 0 CODE 0 text2 dist/default/production\SPI_M.X.production.o
-__pmaintext DCC 0 CODE 0 maintext dist/default/production\SPI_M.X.production.o
-_Lcd_Write_String_4bits 874 0 CODE 0 text13 dist/default/production\SPI_M.X.production.o
+__ptext10 918 0 CODE 0 text10 dist/default/production\SPI_M.X.production.o
+__ptext11 862 0 CODE 0 text11 dist/default/production\SPI_M.X.production.o
+__ptext12 9D2 0 CODE 0 text12 dist/default/production\SPI_M.X.production.o
+__ptext13 6CA 0 CODE 0 text13 dist/default/production\SPI_M.X.production.o
+__ptext14 5EC 0 CODE 0 text14 dist/default/production\SPI_M.X.production.o
+__ptext15 7D6 0 CODE 0 text15 dist/default/production\SPI_M.X.production.o
+__ptext16 4BA 0 CODE 0 text16 dist/default/production\SPI_M.X.production.o
+__ptext17 51A 0 CODE 0 text17 dist/default/production\SPI_M.X.production.o
+__ptext18 54E 0 CODE 0 text18 dist/default/production\SPI_M.X.production.o
+___awdiv 9D2 0 CODE 0 text12 dist/default/production\SPI_M.X.production.o
+___awmod 862 0 CODE 0 text11 dist/default/production\SPI_M.X.production.o
+___lwdiv 74E 0 CODE 0 text3 dist/default/production\SPI_M.X.production.o
+___lwmod 656 0 CODE 0 text2 dist/default/production\SPI_M.X.production.o
+__pmaintext C22 0 CODE 0 maintext dist/default/production\SPI_M.X.production.o
+_Lcd_Write_String_4bits 6CA 0 CODE 0 text13 dist/default/production\SPI_M.X.production.o
 __Lcommon 0 0 ABS 0 common -
 __Lconfig 0 0 CONFIG 4 config -
 main@ADC1 2F 0 BANK0 1 cstackBANK0 dist/default/production\SPI_M.X.production.o
-main@VAL1 3B 0 BANK0 1 cstackBANK0 dist/default/production\SPI_M.X.production.o
+main@ADC2 38 0 BANK0 1 cstackBANK0 dist/default/production\SPI_M.X.production.o
+main@VAL1 47 0 BANK0 1 cstackBANK0 dist/default/production\SPI_M.X.production.o
+main@VAL2 48 0 BANK0 1 cstackBANK0 dist/default/production\SPI_M.X.production.o
 ___lwdiv@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\SPI_M.X.production.o
 Lcd_Set_Cursor_4bits@a 76 0 COMMON 1 cstackCOMMON dist/default/production\SPI_M.X.production.o
 Lcd_Set_Cursor_4bits@b 74 0 COMMON 1 cstackCOMMON dist/default/production\SPI_M.X.production.o
 Lcd_Set_Cursor_4bits@y 78 0 COMMON 1 cstackCOMMON dist/default/production\SPI_M.X.production.o
 Lcd_Set_Cursor_4bits@z 77 0 COMMON 1 cstackCOMMON dist/default/production\SPI_M.X.production.o
-__end_of_Lcd_Set_Cursor_4bits A0C 0 CODE 0 text15 dist/default/production\SPI_M.X.production.o
+__end_of_Lcd_Set_Cursor_4bits 862 0 CODE 0 text15 dist/default/production\SPI_M.X.production.o
 __end_of__stringtab 26 0 STRING 0 strings dist/default/production\SPI_M.X.production.o
 __Lspace_0 0 0 ABS 0 - -
 __Lspace_1 0 0 ABS 0 - -
@@ -560,18 +587,18 @@ ___lwdiv@dividend 72 0 COMMON 1 cstackCOMMON dist/default/production\SPI_M.X.pro
 ?___lwmod 78 0 COMMON 1 cstackCOMMON dist/default/production\SPI_M.X.production.o
 __Hreset_vec 0 0 CODE 0 reset_vec -
 ___awmod@dividend 7B 0 COMMON 1 cstackCOMMON dist/default/production\SPI_M.X.production.o
-__ptext1 C4A 0 CODE 0 text1 dist/default/production\SPI_M.X.production.o
-__ptext2 800 0 CODE 0 text2 dist/default/production\SPI_M.X.production.o
-__ptext3 8F8 0 CODE 0 text3 dist/default/production\SPI_M.X.production.o
-__ptext4 644 0 CODE 0 text4 dist/default/production\SPI_M.X.production.o
-__ptext5 65E 0 CODE 0 text5 dist/default/production\SPI_M.X.production.o
-__ptext6 650 0 CODE 0 text6 dist/default/production\SPI_M.X.production.o
-__ptext7 748 0 CODE 0 text7 dist/default/production\SPI_M.X.production.o
-__ptext8 6A4 0 CODE 0 text8 dist/default/production\SPI_M.X.production.o
-__ptext9 68A 0 CODE 0 text9 dist/default/production\SPI_M.X.production.o
-_spiInit 6A4 0 CODE 0 text8 dist/default/production\SPI_M.X.production.o
-_spiRead 65E 0 CODE 0 text5 dist/default/production\SPI_M.X.production.o
-_sprintf C4A 0 CODE 0 text1 dist/default/production\SPI_M.X.production.o
+__ptext1 AA0 0 CODE 0 text1 dist/default/production\SPI_M.X.production.o
+__ptext2 656 0 CODE 0 text2 dist/default/production\SPI_M.X.production.o
+__ptext3 74E 0 CODE 0 text3 dist/default/production\SPI_M.X.production.o
+__ptext4 48E 0 CODE 0 text4 dist/default/production\SPI_M.X.production.o
+__ptext5 4A8 0 CODE 0 text5 dist/default/production\SPI_M.X.production.o
+__ptext6 49A 0 CODE 0 text6 dist/default/production\SPI_M.X.production.o
+__ptext7 592 0 CODE 0 text7 dist/default/production\SPI_M.X.production.o
+__ptext8 4EE 0 CODE 0 text8 dist/default/production\SPI_M.X.production.o
+__ptext9 4D4 0 CODE 0 text9 dist/default/production\SPI_M.X.production.o
+_spiInit 4EE 0 CODE 0 text8 dist/default/production\SPI_M.X.production.o
+_spiRead 4A8 0 CODE 0 text5 dist/default/production\SPI_M.X.production.o
+_sprintf AA0 0 CODE 0 text1 dist/default/production\SPI_M.X.production.o
 spiWrite@dat 70 0 COMMON 1 cstackCOMMON dist/default/production\SPI_M.X.production.o
 __Lpowerup 0 0 CODE 0 powerup -
 spiInit@sType 73 0 COMMON 1 cstackCOMMON dist/default/production\SPI_M.X.production.o
@@ -579,13 +606,13 @@ __Leeprom_data 0 0 EEDATA 3 eeprom_data -
 sprintf@ap 27 0 BANK0 1 cstackBANK0 dist/default/production\SPI_M.X.production.o
 sprintf@sp 2B 0 BANK0 1 cstackBANK0 dist/default/production\SPI_M.X.production.o
 __Lreset_vec 0 0 CODE 0 reset_vec -
-_Lcd_Port_4bits 704 0 CODE 0 text18 dist/default/production\SPI_M.X.production.o
+_Lcd_Port_4bits 54E 0 CODE 0 text18 dist/default/production\SPI_M.X.production.o
 Lcd_Write_Char_4bits@a 74 0 COMMON 1 cstackCOMMON dist/default/production\SPI_M.X.production.o
 Lcd_Write_Char_4bits@y 73 0 COMMON 1 cstackCOMMON dist/default/production\SPI_M.X.production.o
 __end_of__initialization FF8 0 CODE 0 cinit dist/default/production\SPI_M.X.production.o
 ___awmod@divisor 79 0 COMMON 1 cstackCOMMON dist/default/production\SPI_M.X.production.o
 __Lfunctab 0 0 ENTRY 0 functab -
-_spiReceiveWait 650 0 CODE 0 text6 dist/default/production\SPI_M.X.production.o
+_spiReceiveWait 49A 0 CODE 0 text6 dist/default/production\SPI_M.X.production.o
 __Lclrtext 0 0 ABS 0 clrtext -
 __pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\SPI_M.X.production.o
 _SSPSTAT 94 0 ABS 0 - dist/default/production\SPI_M.X.production.o
@@ -600,22 +627,22 @@ _PORTB 6 0 ABS 0 - dist/default/production\SPI_M.X.production.o
 _PORTD 8 0 ABS 0 - dist/default/production\SPI_M.X.production.o
 _TRISB 86 0 ABS 0 - dist/default/production\SPI_M.X.production.o
 _TRISD 88 0 ABS 0 - dist/default/production\SPI_M.X.production.o
-__end_of_setup 796 0 CODE 0 text7 dist/default/production\SPI_M.X.production.o
+__end_of_setup 5EC 0 CODE 0 text7 dist/default/production\SPI_M.X.production.o
 __Hram 0 0 ABS 0 ram -
 __Lram 0 0 ABS 0 ram -
-_setup 748 0 CODE 0 text7 dist/default/production\SPI_M.X.production.o
-__end_of_Lcd_Write_String_4bits 8F8 0 CODE 0 text13 dist/default/production\SPI_M.X.production.o
+_setup 592 0 CODE 0 text7 dist/default/production\SPI_M.X.production.o
+__end_of_Lcd_Write_String_4bits 74E 0 CODE 0 text13 dist/default/production\SPI_M.X.production.o
 _SSPSTATbits 94 0 ABS 0 - dist/default/production\SPI_M.X.production.o
-_Lcd_Write_Char_4bits 796 0 CODE 0 text14 dist/default/production\SPI_M.X.production.o
-__end_of_Lcd_Port_4bits 748 0 CODE 0 text18 dist/default/production\SPI_M.X.production.o
-_Lcd_Init_4bits AC2 0 CODE 0 text10 dist/default/production\SPI_M.X.production.o
+_Lcd_Write_Char_4bits 5EC 0 CODE 0 text14 dist/default/production\SPI_M.X.production.o
+__end_of_Lcd_Port_4bits 592 0 CODE 0 text18 dist/default/production\SPI_M.X.production.o
+_Lcd_Init_4bits 918 0 CODE 0 text10 dist/default/production\SPI_M.X.production.o
 spiInit@sClockIdle 71 0 COMMON 1 cstackCOMMON dist/default/production\SPI_M.X.production.o
 __initialization FF8 0 CODE 0 cinit dist/default/production\SPI_M.X.production.o
-__end_of_Lcd_Clear_4bits 68A 0 CODE 0 text16 dist/default/production\SPI_M.X.production.o
-_spiWrite 644 0 CODE 0 text4 dist/default/production\SPI_M.X.production.o
+__end_of_Lcd_Clear_4bits 4D4 0 CODE 0 text16 dist/default/production\SPI_M.X.production.o
+_spiWrite 48E 0 CODE 0 text4 dist/default/production\SPI_M.X.production.o
 __pstrings 6 0 STRING 0 strings dist/default/production\SPI_M.X.production.o
-__end_of_spiReceiveWait 65E 0 CODE 0 text6 dist/default/production\SPI_M.X.production.o
-__end_of_spiWrite 650 0 CODE 0 text4 dist/default/production\SPI_M.X.production.o
+__end_of_spiReceiveWait 4A8 0 CODE 0 text6 dist/default/production\SPI_M.X.production.o
+__end_of_spiWrite 49A 0 CODE 0 text4 dist/default/production\SPI_M.X.production.o
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -642,27 +669,27 @@ __end_of_spiWrite 650 0 CODE 0 text4 dist/default/production\SPI_M.X.production.
 # All other numeric quantities are in decimal.
 %SEGMENTS
 cinit 0 7FC FF8 4 2
-text1 0 625 C4A C1 2
-text2 0 400 800 3A 2
-text3 0 47C 8F8 44 2
-text4 0 322 644 6 2
-text5 0 32F 65E 9 2
-text6 0 328 650 7 2
-text7 0 3A4 748 27 2
-text8 0 352 6A4 16 2
-text9 0 345 68A D 2
-text10 0 561 AC2 5D 2
-text11 0 506 A0C 5B 2
-text12 0 5BE B7C 67 2
-text13 0 43A 874 42 2
-text14 0 3CB 796 35 2
-text15 0 4C0 980 46 2
-text16 0 338 670 D 2
-text17 0 368 6D0 1A 2
-text18 0 382 704 22 2
-maintext 0 6E6 DCC 116 2
+text1 0 550 AA0 C1 2
+text2 0 32B 656 3A 2
+text3 0 3A7 74E 44 2
+text4 0 247 48E 6 2
+text5 0 254 4A8 9 2
+text6 0 24D 49A 7 2
+text7 0 2C9 592 2D 2
+text8 0 277 4EE 16 2
+text9 0 26A 4D4 D 2
+text10 0 48C 918 5D 2
+text11 0 431 862 5B 2
+text12 0 4E9 9D2 67 2
+text13 0 365 6CA 42 2
+text14 0 2F6 5EC 35 2
+text15 0 3EB 7D6 46 2
+text16 0 25D 4BA D 2
+text17 0 28D 51A 1A 2
+text18 0 2A7 54E 22 2
+maintext 0 611 C22 1EB 2
 cstackCOMMON 1 70 70 E 1
-cstackBANK0 1 20 20 1C 1
+cstackBANK0 1 20 20 29 1
 reset_vec 0 0 0 3 2
 strings 0 3 6 29 2
 # %NOTES Section
