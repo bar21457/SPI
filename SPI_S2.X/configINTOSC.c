@@ -8,7 +8,7 @@
 #include <xc.h>
 #include "configINTOSC.h"
 
-void setupINTOSC(FOSC F) {
+void setupINTOSC(F_OSC F) {
     
     OSCCONbits.IRCF = F ;
     OSCCONbits.SCS = 1;

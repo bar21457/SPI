@@ -50,11 +50,39 @@
 
 void setup(void);
 
+int CONT;
+int FLAG_B;
+uint8_t VAL_READ;
+
 void __interrupt() isr(void){
-   if(SSPIF == 1){
-        PORTD = spiRead();
+   if(SSPIF == 1)
+   {
+        VAL_READ = spiRead();
         spiWrite(ADRESH);
         SSPIF = 0;
+    }
+   
+   if (INTCONbits.RBIF == 1) // Interrupción del PORTB
+    {
+        if(!PORTBbits.RB0)
+        {
+            __delay_ms(20); //Esperar 20ms
+            if(!PORTBbits.RB0) //Si el botón sigue presionado después de 20ms
+            {
+                CONT ++;           //Incrementamos en 1 el valor del PORTD
+                FLAG_B = 1;
+            }
+        }
+        else if(!PORTBbits.RB1)
+        {
+            __delay_ms(20); //Esperar 20ms
+            if(!PORTBbits.RB1) //Si el botón sigue presionado después de 20ms
+            {
+                CONT --;           //Decrementamos en 1 el valor del PORTD   
+                FLAG_B = 1;
+            }
+        }
+        INTCONbits.RBIF = 0; // Bajamos la bandera de interrupción del PORTB
     }
 }
 
@@ -65,6 +93,7 @@ void main(void) {
     while(1)
     {
        readADC(0);
+       PORTD = CONT;
     }
     return;
 }
@@ -77,15 +106,22 @@ void setup (void){
     ANSEL = 0;
     ANSELH = 0;
 
-    TRISB = 0;              //Configuración del PORTB como input
+    TRISB = 0b00000011;     //Configuración del PORTB como input
     TRISD = 0;              //Configuración del PORTD como output
 
     PORTB = 0;              //Limpiamos el PORTB
     PORTD = 0;              //Limpiamos el PORTD
+    
+    OPTION_REGbits.nRBPU = 0;   //Habilitamos los pull-ups del PORTB
+    WPUBbits.WPUB0 = 1;         //Habilitamos el pull-up del RB0
+    WPUBbits.WPUB1 = 1;         //Habilitamos el pull-up del RB1
+    IOCB = 0b00000011;
 
     // Configuración de interrupciones
     INTCONbits.GIE = 1; // Habilitamos interrupciones globales
     INTCONbits.PEIE = 1; // Habilitamos interrupciones periféricas
+    INTCONbits.RBIE = 1;    //Habilitamos las interrupciones del PORTB (RBIE)
+    INTCONbits.RBIF = 0;    //Bajamos la bandera de interrupción del PORTB (RBIF)
     PIR1bits.SSPIF = 0;         // Borramos bandera interrupción MSSP
     PIE1bits.SSPIE = 1;         // Habilitamos interrupción MSSP
     

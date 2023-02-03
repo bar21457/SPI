@@ -2781,9 +2781,9 @@ typedef enum
     FOSC_500KHZ = 0b0011,
     FOSC_250KHZ = 0b0010,
     FOSC_125KHZ = 0b0001
-}FOSC;
+}F_OSC;
 
-void setupINTOSC (FOSC);
+void setupINTOSC (F_OSC);
 # 45 "main_S2.c" 2
 
 # 1 "./configSPI.h" 1
@@ -2834,11 +2834,39 @@ void readADC (uint8_t);
 
 void setup(void);
 
+int CONT;
+int FLAG_B;
+uint8_t VAL_READ;
+
 void __attribute__((picinterrupt(("")))) isr(void){
-   if(SSPIF == 1){
-        PORTD = spiRead();
+   if(SSPIF == 1)
+   {
+        VAL_READ = spiRead();
         spiWrite(ADRESH);
         SSPIF = 0;
+    }
+
+   if (INTCONbits.RBIF == 1)
+    {
+        if(!PORTBbits.RB0)
+        {
+            _delay((unsigned long)((20)*(4000000/4000.0)));
+            if(!PORTBbits.RB0)
+            {
+                CONT ++;
+                FLAG_B = 1;
+            }
+        }
+        else if(!PORTBbits.RB1)
+        {
+            _delay((unsigned long)((20)*(4000000/4000.0)));
+            if(!PORTBbits.RB1)
+            {
+                CONT --;
+                FLAG_B = 1;
+            }
+        }
+        INTCONbits.RBIF = 0;
     }
 }
 
@@ -2849,6 +2877,7 @@ void main(void) {
     while(1)
     {
        readADC(0);
+       PORTD = CONT;
     }
     return;
 }
@@ -2861,15 +2890,22 @@ void setup (void){
     ANSEL = 0;
     ANSELH = 0;
 
-    TRISB = 0;
+    TRISB = 0b00000011;
     TRISD = 0;
 
     PORTB = 0;
     PORTD = 0;
 
+    OPTION_REGbits.nRBPU = 0;
+    WPUBbits.WPUB0 = 1;
+    WPUBbits.WPUB1 = 1;
+    IOCB = 0b00000011;
+
 
     INTCONbits.GIE = 1;
     INTCONbits.PEIE = 1;
+    INTCONbits.RBIE = 1;
+    INTCONbits.RBIF = 0;
     PIR1bits.SSPIF = 0;
     PIE1bits.SSPIE = 1;
 

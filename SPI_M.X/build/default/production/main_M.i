@@ -2860,8 +2860,14 @@ void main(void) {
     uint8_t VAL2_D;
     uint8_t VAL2_C;
 
+    uint8_t CONT;
+    uint8_t CONT_U;
+    uint8_t CONT_D;
+    uint8_t CONT_C;
+
     char ADC1[9];
     char ADC2[9];
+    char CONT_S[9];
 
     Lcd_Clear_4bits();
     Lcd_Set_Cursor_4bits(1,1);

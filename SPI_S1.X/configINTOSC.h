@@ -20,8 +20,8 @@ typedef enum
     FOSC_500KHZ = 0b0011,
     FOSC_250KHZ = 0b0010,
     FOSC_125KHZ = 0b0001
-}FOSC;
+}F_OSC;
 
-void setupINTOSC (FOSC);
+void setupINTOSC (F_OSC);
 
 #endif	/* CONFIGINTOSC_H */

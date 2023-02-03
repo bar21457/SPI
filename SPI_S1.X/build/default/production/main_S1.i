@@ -2781,9 +2781,9 @@ typedef enum
     FOSC_500KHZ = 0b0011,
     FOSC_250KHZ = 0b0010,
     FOSC_125KHZ = 0b0001
-}FOSC;
+}F_OSC;
 
-void setupINTOSC (FOSC);
+void setupINTOSC (F_OSC);
 # 45 "main_S1.c" 2
 
 # 1 "./configSPI.h" 1
@@ -2834,9 +2834,11 @@ void readADC (uint8_t);
 
 void setup(void);
 
+uint8_t VAL_READ;
+
 void __attribute__((picinterrupt(("")))) isr(void){
    if(SSPIF == 1){
-        PORTD = spiRead();
+        VAL_READ = spiRead();
         spiWrite(ADRESH);
         SSPIF = 0;
     }

@@ -50,9 +50,11 @@
 
 void setup(void);
 
+uint8_t VAL_READ;
+
 void __interrupt() isr(void){
    if(SSPIF == 1){
-        PORTD = spiRead();
+        VAL_READ = spiRead();
         spiWrite(ADRESH);
         SSPIF = 0;
     }

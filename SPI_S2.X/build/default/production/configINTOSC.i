@@ -2644,13 +2644,13 @@ typedef enum
     FOSC_500KHZ = 0b0011,
     FOSC_250KHZ = 0b0010,
     FOSC_125KHZ = 0b0001
-}FOSC;
+}F_OSC;
 
-void setupINTOSC (FOSC);
+void setupINTOSC (F_OSC);
 # 9 "configINTOSC.c" 2
 
 
-void setupINTOSC(FOSC F) {
+void setupINTOSC(F_OSC F) {
 
     OSCCONbits.IRCF = F ;
     OSCCONbits.SCS = 1;

@@ -34,7 +34,7 @@ SPI_CLOCK_IDLE_LOW 0
 SPI_IDLE_2_ACTIVE 0
 SPI_ACTIVE_2_IDLE 64
 ]
-"94 C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S1.X\main_S1.c
+"96 C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S1.X\main_S1.c
 [e E1349 . `uc
 FOSC_8MHZ 7
 FOSC_4MHZ 6
@@ -44,7 +44,7 @@ FOSC_500KHZ 3
 FOSC_250KHZ 2
 FOSC_125KHZ 1
 ]
-"97
+"99
 [e E1360 . `uc
 SPI_MASTER_OSC_DIV4 32
 SPI_MASTER_OSC_DIV16 33
@@ -87,11 +87,11 @@ SPI_ACTIVE_2_IDLE 64
 [v _spiWrite spiWrite `(v  1 e 1 0 ]
 "47
 [v _spiRead spiRead `(uc  1 e 1 0 ]
-"53 C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S1.X\main_S1.c
+"55 C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S1.X\main_S1.c
 [v _isr isr `II(v  1 e 1 0 ]
-"61
+"63
 [v _main main `(v  1 e 1 0 ]
-"75
+"77
 [v _setup setup `(v  1 e 1 0 ]
 "229 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h
 [v _PORTB PORTB `VEuc  1 e 1 @6 ]
@@ -273,15 +273,17 @@ SPI_ACTIVE_2_IDLE 64
 [v _TRISC3 TRISC3 `VEb  1 e 0 @1083 ]
 "4468
 [v _TRISC5 TRISC5 `VEb  1 e 0 @1085 ]
-"61 C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S1.X\main_S1.c
+"53 C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S1.X\main_S1.c
+[v _VAL_READ VAL_READ `uc  1 e 1 0 ]
+"63
 [v _main main `(v  1 e 1 0 ]
 {
-"70
+"72
 } 0
-"75
+"77
 [v _setup setup `(v  1 e 1 0 ]
 {
-"99
+"101
 } 0
 "12 C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S1.X\configSPI.c
 [v _spiInit spiInit `(v  1 e 1 0 ]
@@ -322,10 +324,10 @@ SPI_ACTIVE_2_IDLE 64
 [v readADC@canal canal `uc  1 a 1 5 ]
 "75
 } 0
-"53 C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S1.X\main_S1.c
+"55 C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S1.X\main_S1.c
 [v _isr isr `II(v  1 e 1 0 ]
 {
-"59
+"61
 } 0
 "34 C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S1.X\configSPI.c
 [v _spiWrite spiWrite `(v  1 e 1 0 ]
