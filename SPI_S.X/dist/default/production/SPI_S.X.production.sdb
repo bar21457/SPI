@@ -34,7 +34,7 @@ SPI_CLOCK_IDLE_LOW 0
 SPI_IDLE_2_ACTIVE 0
 SPI_ACTIVE_2_IDLE 64
 ]
-"94 C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S.c
+"94 C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S1.c
 [e E1349 . `uc
 FOSC_8MHZ 7
 FOSC_4MHZ 6
@@ -87,7 +87,7 @@ SPI_ACTIVE_2_IDLE 64
 [v _spiWrite spiWrite `(v  1 e 1 0 ]
 "47
 [v _spiRead spiRead `(uc  1 e 1 0 ]
-"53 C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S.c
+"53 C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S1.c
 [v _isr isr `II(v  1 e 1 0 ]
 "61
 [v _main main `(v  1 e 1 0 ]
@@ -273,7 +273,7 @@ SPI_ACTIVE_2_IDLE 64
 [v _TRISC3 TRISC3 `VEb  1 e 0 @1083 ]
 "4468
 [v _TRISC5 TRISC5 `VEb  1 e 0 @1085 ]
-"61 C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S.c
+"61 C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S1.c
 [v _main main `(v  1 e 1 0 ]
 {
 "70
@@ -322,7 +322,7 @@ SPI_ACTIVE_2_IDLE 64
 [v readADC@canal canal `uc  1 a 1 5 ]
 "75
 } 0
-"53 C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S.c
+"53 C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S1.c
 [v _isr isr `II(v  1 e 1 0 ]
 {
 "59

@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\byron\AppData\Local\Temp\xcAs11vk.o
+$C:\Users\byron\AppData\Local\Temp\xcAs42c.o
 idloc IDLOC 5 2000 2000 4 2 1
 end_init CODE 0 0 0 3 2 1
 config CONFIG 4 2007 2007 2 2 1
@@ -84,11 +84,11 @@ STRING 800-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\SPI_M.X.production.o
-7FC cinit CODE >1026:C:\Users\byron\AppData\Local\Temp\xcAs11vk.s
-7FC cinit CODE >1029:C:\Users\byron\AppData\Local\Temp\xcAs11vk.s
-7FC cinit CODE >1035:C:\Users\byron\AppData\Local\Temp\xcAs11vk.s
-7FC cinit CODE >1037:C:\Users\byron\AppData\Local\Temp\xcAs11vk.s
-7FD cinit CODE >1038:C:\Users\byron\AppData\Local\Temp\xcAs11vk.s
+7FC cinit CODE >1026:C:\Users\byron\AppData\Local\Temp\xcAs42c.s
+7FC cinit CODE >1029:C:\Users\byron\AppData\Local\Temp\xcAs42c.s
+7FC cinit CODE >1035:C:\Users\byron\AppData\Local\Temp\xcAs42c.s
+7FC cinit CODE >1037:C:\Users\byron\AppData\Local\Temp\xcAs42c.s
+7FD cinit CODE >1038:C:\Users\byron\AppData\Local\Temp\xcAs42c.s
 382 text18 CODE >14:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
 383 text18 CODE >15:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
 387 text18 CODE >16:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configLCD_4bits.c
@@ -406,21 +406,21 @@ spiInit@sTransmitEdge 72 0 COMMON 1 cstackCOMMON dist/default/production\SPI_M.X
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
 Lcd_Port_4bits@a 70 0 COMMON 1 cstackCOMMON dist/default/production\SPI_M.X.production.o
 __Hstrings 0 0 ABS 0 strings -
-___sp 0 0 STACK 2 stack C:\Users\byron\AppData\Local\Temp\xcAs11vk.o
+___sp 0 0 STACK 2 stack C:\Users\byron\AppData\Local\Temp\xcAs42c.o
 _main DCC 0 CODE 0 maintext dist/default/production\SPI_M.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\SPI_M.X.production.o
-start 0 0 CODE 0 init C:\Users\byron\AppData\Local\Temp\xcAs11vk.o
+start 0 0 CODE 0 init C:\Users\byron\AppData\Local\Temp\xcAs42c.o
 __end_of_Lcd_Init_4bits B7C 0 CODE 0 text10 dist/default/production\SPI_M.X.production.o
 _Lcd_Clear_4bits 670 0 CODE 0 text16 dist/default/production\SPI_M.X.production.o
 __Hpowerup 0 0 CODE 0 powerup -
 ___awmod@sign 21 0 BANK0 1 cstackBANK0 dist/default/production\SPI_M.X.production.o
 _Lcd_Set_Cursor_4bits 980 0 CODE 0 text15 dist/default/production\SPI_M.X.production.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\byron\AppData\Local\Temp\xcAs11vk.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\byron\AppData\Local\Temp\xcAs11vk.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\byron\AppData\Local\Temp\xcAs11vk.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\byron\AppData\Local\Temp\xcAs11vk.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\byron\AppData\Local\Temp\xcAs11vk.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\byron\AppData\Local\Temp\xcAs11vk.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\byron\AppData\Local\Temp\xcAs42c.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\byron\AppData\Local\Temp\xcAs42c.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\byron\AppData\Local\Temp\xcAs42c.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\byron\AppData\Local\Temp\xcAs42c.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\byron\AppData\Local\Temp\xcAs42c.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\byron\AppData\Local\Temp\xcAs42c.o
 _setupINTOSC 68A 0 CODE 0 text9 dist/default/production\SPI_M.X.production.o
 _OSCCONbits 8F 0 ABS 0 - dist/default/production\SPI_M.X.production.o
 wtemp0 7E 0 ABS 0 - dist/default/production\SPI_M.X.production.o
@@ -439,8 +439,8 @@ __end_of___awdiv C4A 0 CODE 0 text12 dist/default/production\SPI_M.X.production.
 __end_of___awmod AC2 0 CODE 0 text11 dist/default/production\SPI_M.X.production.o
 __end_of___lwdiv 980 0 CODE 0 text3 dist/default/production\SPI_M.X.production.o
 __end_of___lwmod 874 0 CODE 0 text2 dist/default/production\SPI_M.X.production.o
-___stackhi 0 0 ABS 0 - C:\Users\byron\AppData\Local\Temp\xcAs11vk.o
-___stacklo 0 0 ABS 0 - C:\Users\byron\AppData\Local\Temp\xcAs11vk.o
+___stackhi 0 0 ABS 0 - C:\Users\byron\AppData\Local\Temp\xcAs42c.o
+___stacklo 0 0 ABS 0 - C:\Users\byron\AppData\Local\Temp\xcAs42c.o
 _dpowers 26 0 STRING 0 strings dist/default/production\SPI_M.X.production.o
 ___lwdiv@quotient 75 0 COMMON 1 cstackCOMMON dist/default/production\SPI_M.X.production.o
 ___lwmod@dividend 7A 0 COMMON 1 cstackCOMMON dist/default/production\SPI_M.X.production.o
@@ -454,7 +454,7 @@ _SSPCON 14 0 ABS 0 - dist/default/production\SPI_M.X.production.o
 _TRISC2 43A 0 ABS 0 - dist/default/production\SPI_M.X.production.o
 _TRISC3 43B 0 ABS 0 - dist/default/production\SPI_M.X.production.o
 _TRISC5 43D 0 ABS 0 - dist/default/production\SPI_M.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\byron\AppData\Local\Temp\xcAs11vk.o
+___int_sp 0 0 STACK 2 stack C:\Users\byron\AppData\Local\Temp\xcAs42c.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -508,7 +508,7 @@ sprintf@val 28 0 BANK0 1 cstackBANK0 dist/default/production\SPI_M.X.production.
 __end_of_setupINTOSC 6A4 0 CODE 0 text9 dist/default/production\SPI_M.X.production.o
 __Lintentry 0 0 CODE 0 intentry -
 __stringtab 6 0 STRING 0 strings dist/default/production\SPI_M.X.production.o
-reset_vec 0 0 CODE 0 reset_vec C:\Users\byron\AppData\Local\Temp\xcAs11vk.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\byron\AppData\Local\Temp\xcAs42c.o
 main@VAL1_C 3A 0 BANK0 1 cstackBANK0 dist/default/production\SPI_M.X.production.o
 main@VAL1_D 39 0 BANK0 1 cstackBANK0 dist/default/production\SPI_M.X.production.o
 main@VAL1_U 38 0 BANK0 1 cstackBANK0 dist/default/production\SPI_M.X.production.o

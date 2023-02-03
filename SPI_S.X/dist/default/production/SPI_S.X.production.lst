@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.40 build 20220703182018 
-                                                                                               Fri Feb 03 00:15:00 2023
+                                                                                               Fri Feb 03 00:36:47 2023
 
 Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1 
      1                           	processor	16F887
@@ -592,7 +592,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
    578 ;;
    579 ;; *************** function _main *****************
    580 ;; Defined at:
-   581 ;;		line 61 in file "main_S.c"
+   581 ;;		line 61 in file "main_S1.c"
    582 ;; Parameters:    Size  Location     Type
    583 ;;		None
    584 ;; Auto vars:     Size  Location     Type
@@ -628,13 +628,13 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
    614                           ; Regs used in _main: [wreg+status,2+status,0+pclath+cstack]
    615                           
    616                           
-   617                           ;main_S.c: 63:     setup();
+   617                           ;main_S1.c: 63:     setup();
    618     00DC  120A  118A  207F  120A  118A  	fcall	_setup
    619     00E1                     l116:	
-   620                           ;main_S.c: 65:     while(1)
+   620                           ;main_S1.c: 65:     while(1)
    621                           
    622                           
-   623                           ;main_S.c: 66:     {;main_S.c: 67:        readADC(0);
+   623                           ;main_S1.c: 66:     {;main_S1.c: 67:        readADC(0);
    624     00E1  3000               	movlw	0
    625     00E2  120A  118A  2013  120A  118A  	fcall	_readADC
    626     00E7  28E1               	goto	l116
@@ -645,7 +645,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
    631     007F                     __ptext1:	
    632 ;; *************** function _setup *****************
    633 ;; Defined at:
-   634 ;;		line 75 in file "main_S.c"
+   634 ;;		line 75 in file "main_S1.c"
    635 ;; Parameters:    Size  Location     Type
    636 ;;		None
    637 ;; Auto vars:     Size  Location     Type
@@ -683,65 +683,65 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
    669                           ; Regs used in _setup: [wreg+status,2+status,0+pclath+cstack]
    670                           
    671                           
-   672                           ;main_S.c: 77:     ANSEL = 0;
+   672                           ;main_S1.c: 77:     ANSEL = 0;
    673     007F  1683               	bsf	3,5	;RP0=1, select bank3
    674     0080  1703               	bsf	3,6	;RP1=1, select bank3
    675     0081  0188               	clrf	8	;volatile
    676                           
-   677                           ;main_S.c: 78:     ANSELH = 0;
+   677                           ;main_S1.c: 78:     ANSELH = 0;
    678     0082  0189               	clrf	9	;volatile
    679                           
-   680                           ;main_S.c: 80:     TRISB = 0;
+   680                           ;main_S1.c: 80:     TRISB = 0;
    681     0083  1683               	bsf	3,5	;RP0=1, select bank1
    682     0084  1303               	bcf	3,6	;RP1=0, select bank1
    683     0085  0186               	clrf	6	;volatile
    684                           
-   685                           ;main_S.c: 81:     TRISD = 0;
+   685                           ;main_S1.c: 81:     TRISD = 0;
    686     0086  0188               	clrf	8	;volatile
    687                           
-   688                           ;main_S.c: 83:     PORTB = 0;
+   688                           ;main_S1.c: 83:     PORTB = 0;
    689     0087  1283               	bcf	3,5	;RP0=0, select bank0
    690     0088  1303               	bcf	3,6	;RP1=0, select bank0
    691     0089  0186               	clrf	6	;volatile
    692                           
-   693                           ;main_S.c: 84:     PORTD = 0;
+   693                           ;main_S1.c: 84:     PORTD = 0;
    694     008A  0188               	clrf	8	;volatile
    695     008B                     l812:
    696                           
-   697                           ;main_S.c: 87:     INTCONbits.GIE = 1;
+   697                           ;main_S1.c: 87:     INTCONbits.GIE = 1;
    698     008B  178B               	bsf	11,7	;volatile
    699     008C                     l814:
    700                           
-   701                           ;main_S.c: 88:     INTCONbits.PEIE = 1;
+   701                           ;main_S1.c: 88:     INTCONbits.PEIE = 1;
    702     008C  170B               	bsf	11,6	;volatile
    703     008D                     l816:
    704                           
-   705                           ;main_S.c: 89:     PIR1bits.SSPIF = 0;
+   705                           ;main_S1.c: 89:     PIR1bits.SSPIF = 0;
    706     008D  118C               	bcf	12,3	;volatile
    707     008E                     l818:
    708                           
-   709                           ;main_S.c: 90:     PIE1bits.SSPIE = 1;
+   709                           ;main_S1.c: 90:     PIE1bits.SSPIE = 1;
    710     008E  1683               	bsf	3,5	;RP0=1, select bank1
    711     008F  1303               	bcf	3,6	;RP1=0, select bank1
    712     0090  158C               	bsf	12,3	;volatile
    713     0091                     l820:
    714                           
-   715                           ;main_S.c: 92:     TRISAbits.TRISA5 = 1;
+   715                           ;main_S1.c: 92:     TRISAbits.TRISA5 = 1;
    716     0091  1685               	bsf	5,5	;volatile
    717     0092                     l822:
    718                           
-   719                           ;main_S.c: 94:     setupINTOSC(FOSC_4MHZ);
+   719                           ;main_S1.c: 94:     setupINTOSC(FOSC_4MHZ);
    720     0092  3006               	movlw	6
    721     0093  120A  118A  20EB  120A  118A  	fcall	_setupINTOSC
    722     0098                     l824:
    723                           
-   724                           ;main_S.c: 95:     setupADC(0);
+   724                           ;main_S1.c: 95:     setupADC(0);
    725     0098  3000               	movlw	0
    726     0099  120A  118A  2053  120A  118A  	fcall	_setupADC
    727     009E                     l826:
    728                           
-   729                           ;main_S.c: 97:     spiInit(SPI_SLAVE_SS_EN, SPI_DATA_SAMPLE_MIDDLE, SPI_CLOCK_IDLE_LOW, 
-      +                          SPI_IDLE_2_ACTIVE);
+   729                           ;main_S1.c: 97:     spiInit(SPI_SLAVE_SS_EN, SPI_DATA_SAMPLE_MIDDLE, SPI_CLOCK_IDLE_LOW,
+      +                           SPI_IDLE_2_ACTIVE);
    730     009E  01F3               	clrf	spiInit@sDataSample
    731     009F  01F4               	clrf	spiInit@sClockIdle
    732     00A0  01F5               	clrf	spiInit@sTransmitEdge
@@ -1204,7 +1204,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1187     00A8                     __ptext6:	
   1188 ;; *************** function _isr *****************
   1189 ;; Defined at:
-  1190 ;;		line 53 in file "main_S.c"
+  1190 ;;		line 53 in file "main_S1.c"
   1191 ;; Parameters:    Size  Location     Type
   1192 ;;		None
   1193 ;; Auto vars:     Size  Location     Type
@@ -1238,7 +1238,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1221                           
   1222     00A8                     i1l792:
   1223                           
-  1224                           ;main_S.c: 54:    if(SSPIF == 1){
+  1224                           ;main_S1.c: 54:    if(SSPIF == 1){
   1225     00A8  1283               	bcf	3,5	;RP0=0, select bank0
   1226     00A9  1303               	bcf	3,6	;RP1=0, select bank0
   1227     00AA  1D8C               	btfss	12,3	;volatile
@@ -1249,18 +1249,18 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1232     00AE                     u9_20:
   1233     00AE                     i1l794:
   1234                           
-  1235                           ;main_S.c: 55:         PORTD = spiRead();
+  1235                           ;main_S1.c: 55:         PORTD = spiRead();
   1236     00AE  120A  118A  20F8  120A  118A  	fcall	_spiRead
   1237     00B3  1283               	bcf	3,5	;RP0=0, select bank0
   1238     00B4  1303               	bcf	3,6	;RP1=0, select bank0
   1239     00B5  0088               	movwf	8	;volatile
   1240                           
-  1241                           ;main_S.c: 56:         spiWrite(ADRESH);
+  1241                           ;main_S1.c: 56:         spiWrite(ADRESH);
   1242     00B6  081E               	movf	30,w	;volatile
   1243     00B7  120A  118A  2108  120A  118A  	fcall	_spiWrite
   1244     00BC                     i1l796:
   1245                           
-  1246                           ;main_S.c: 57:         SSPIF = 0;
+  1246                           ;main_S1.c: 57:         SSPIF = 0;
   1247     00BC  1283               	bcf	3,5	;RP0=0, select bank0
   1248     00BD  1303               	bcf	3,6	;RP1=0, select bank0
   1249     00BE  118C               	bcf	12,3	;volatile
@@ -1653,7 +1653,7 @@ DATA                 0      0       0      12        0.0%
 
 
 Microchip Technology PIC Macro Assembler V2.40 build 20220703182018 
-Symbol Table                                                                                   Fri Feb 03 00:15:00 2023
+Symbol Table                                                                                   Fri Feb 03 00:36:47 2023
 
                       l5 00F7              _SSPSTATbits 0094                       l21 00D6  
                      l22 00DB                       l60 0024                       l62 0028  

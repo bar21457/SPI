@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\byron\AppData\Local\Temp\xcAs16c4.o
+$C:\Users\byron\AppData\Local\Temp\xcAsgg4.o
 idloc IDLOC 5 2000 2000 4 2 1
 reset_vec CODE 0 0 0 3 2 1
 end_init CODE 0 C C 3 2 1
@@ -76,12 +76,12 @@ STRING 10E-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\SPI_S.X.production.o
-F cinit CODE >949:C:\Users\byron\AppData\Local\Temp\xcAs16c4.s
-F cinit CODE >952:C:\Users\byron\AppData\Local\Temp\xcAs16c4.s
-F cinit CODE >958:C:\Users\byron\AppData\Local\Temp\xcAs16c4.s
-F cinit CODE >960:C:\Users\byron\AppData\Local\Temp\xcAs16c4.s
-10 cinit CODE >961:C:\Users\byron\AppData\Local\Temp\xcAs16c4.s
-4 intentry CODE >53:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S.c
+F cinit CODE >949:C:\Users\byron\AppData\Local\Temp\xcAsgg4.s
+F cinit CODE >952:C:\Users\byron\AppData\Local\Temp\xcAsgg4.s
+F cinit CODE >958:C:\Users\byron\AppData\Local\Temp\xcAsgg4.s
+F cinit CODE >960:C:\Users\byron\AppData\Local\Temp\xcAsgg4.s
+10 cinit CODE >961:C:\Users\byron\AppData\Local\Temp\xcAsgg4.s
+4 intentry CODE >53:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S1.c
 101 text9 CODE >29:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\configSPI.c
 101 text9 CODE >31:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\configSPI.c
 107 text9 CODE >32:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\configSPI.c
@@ -92,12 +92,12 @@ FD text8 CODE >50:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\configSPI
 108 text7 CODE >34:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\configSPI.c
 109 text7 CODE >36:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\configSPI.c
 10D text7 CODE >37:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\configSPI.c
-A8 text6 CODE >53:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S.c
-A8 text6 CODE >54:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S.c
-AE text6 CODE >55:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S.c
-B6 text6 CODE >56:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S.c
-BC text6 CODE >57:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S.c
-BF text6 CODE >59:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S.c
+A8 text6 CODE >53:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S1.c
+A8 text6 CODE >54:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S1.c
+AE text6 CODE >55:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S1.c
+B6 text6 CODE >56:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S1.c
+BC text6 CODE >57:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S1.c
+BF text6 CODE >59:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S1.c
 13 text5 CODE >49:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\configADC.c
 14 text5 CODE >51:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\configADC.c
 19 text5 CODE >53:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\configADC.c
@@ -149,26 +149,26 @@ D5 text2 CODE >23:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\configSPI
 D6 text2 CODE >24:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\configSPI.c
 D6 text2 CODE >26:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\configSPI.c
 DB text2 CODE >27:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\configSPI.c
-7F text1 CODE >75:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S.c
-7F text1 CODE >77:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S.c
-82 text1 CODE >78:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S.c
-83 text1 CODE >80:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S.c
-86 text1 CODE >81:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S.c
-87 text1 CODE >83:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S.c
-8A text1 CODE >84:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S.c
-8B text1 CODE >87:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S.c
-8C text1 CODE >88:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S.c
-8D text1 CODE >89:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S.c
-8E text1 CODE >90:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S.c
-91 text1 CODE >92:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S.c
-92 text1 CODE >94:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S.c
-98 text1 CODE >95:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S.c
-9E text1 CODE >97:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S.c
-A7 text1 CODE >99:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S.c
-DC maintext CODE >61:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S.c
-DC maintext CODE >63:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S.c
-E1 maintext CODE >65:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S.c
-E1 maintext CODE >67:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S.c
+7F text1 CODE >75:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S1.c
+7F text1 CODE >77:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S1.c
+82 text1 CODE >78:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S1.c
+83 text1 CODE >80:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S1.c
+86 text1 CODE >81:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S1.c
+87 text1 CODE >83:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S1.c
+8A text1 CODE >84:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S1.c
+8B text1 CODE >87:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S1.c
+8C text1 CODE >88:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S1.c
+8D text1 CODE >89:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S1.c
+8E text1 CODE >90:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S1.c
+91 text1 CODE >92:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S1.c
+92 text1 CODE >94:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S1.c
+98 text1 CODE >95:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S1.c
+9E text1 CODE >97:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S1.c
+A7 text1 CODE >99:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S1.c
+DC maintext CODE >61:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S1.c
+DC maintext CODE >63:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S1.c
+E1 maintext CODE >65:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S1.c
+E1 maintext CODE >67:C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S.X\main_S1.c
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -192,17 +192,17 @@ __end_of_readADC A6 0 CODE 0 text5 dist/default/production\SPI_S.X.production.o
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
 __Hstrings 0 0 ABS 0 strings -
 _ADIF 66 0 ABS 0 - dist/default/production\SPI_S.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\byron\AppData\Local\Temp\xcAs16c4.o
+___sp 0 0 STACK 2 stack C:\Users\byron\AppData\Local\Temp\xcAsgg4.o
 _main 1B8 0 CODE 0 maintext dist/default/production\SPI_S.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\SPI_S.X.production.o
-start 18 0 CODE 0 init C:\Users\byron\AppData\Local\Temp\xcAs16c4.o
+start 18 0 CODE 0 init C:\Users\byron\AppData\Local\Temp\xcAsgg4.o
 __Hpowerup 0 0 CODE 0 powerup -
-intlevel0 0 0 ENTRY 0 functab C:\Users\byron\AppData\Local\Temp\xcAs16c4.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\byron\AppData\Local\Temp\xcAs16c4.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\byron\AppData\Local\Temp\xcAs16c4.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\byron\AppData\Local\Temp\xcAs16c4.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\byron\AppData\Local\Temp\xcAs16c4.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\byron\AppData\Local\Temp\xcAs16c4.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\byron\AppData\Local\Temp\xcAsgg4.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\byron\AppData\Local\Temp\xcAsgg4.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\byron\AppData\Local\Temp\xcAsgg4.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\byron\AppData\Local\Temp\xcAsgg4.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\byron\AppData\Local\Temp\xcAsgg4.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\byron\AppData\Local\Temp\xcAsgg4.o
 _setupINTOSC 1D6 0 CODE 0 text3 dist/default/production\SPI_S.X.production.o
 _OSCCONbits 8F 0 ABS 0 - dist/default/production\SPI_S.X.production.o
 wtemp0 7E 0 ABS 0 - dist/default/production\SPI_S.X.production.o
@@ -212,8 +212,8 @@ _ADRESH 1E 0 ABS 0 - dist/default/production\SPI_S.X.production.o
 _ANSELH 189 0 ABS 0 - dist/default/production\SPI_S.X.production.o
 __Lmaintext 0 0 ABS 0 maintext -
 setupINTOSC@F 74 0 COMMON 1 cstackCOMMON dist/default/production\SPI_S.X.production.o
-___stackhi 0 0 ABS 0 - C:\Users\byron\AppData\Local\Temp\xcAs16c4.o
-___stacklo 0 0 ABS 0 - C:\Users\byron\AppData\Local\Temp\xcAs16c4.o
+___stackhi 0 0 ABS 0 - C:\Users\byron\AppData\Local\Temp\xcAsgg4.o
+___stacklo 0 0 ABS 0 - C:\Users\byron\AppData\Local\Temp\xcAsgg4.o
 readADC@canal 75 0 COMMON 1 cstackCOMMON dist/default/production\SPI_S.X.production.o
 spiInit@sDataSample 73 0 COMMON 1 cstackCOMMON dist/default/production\SPI_S.X.production.o
 start_initialization 1E 0 CODE 0 cinit dist/default/production\SPI_S.X.production.o
@@ -223,7 +223,7 @@ _SSPCON 14 0 ABS 0 - dist/default/production\SPI_S.X.production.o
 _TRISC3 43B 0 ABS 0 - dist/default/production\SPI_S.X.production.o
 _TRISC5 43D 0 ABS 0 - dist/default/production\SPI_S.X.production.o
 _readADC 26 0 CODE 0 text5 dist/default/production\SPI_S.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\byron\AppData\Local\Temp\xcAs16c4.o
+___int_sp 0 0 STACK 2 stack C:\Users\byron\AppData\Local\Temp\xcAsgg4.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -269,7 +269,7 @@ saved_w 7E 0 ABS 0 - dist/default/production\SPI_S.X.production.o
 __end_of_setupINTOSC 1F0 0 CODE 0 text3 dist/default/production\SPI_S.X.production.o
 __end_of_isr 18C 0 CODE 0 text6 dist/default/production\SPI_S.X.production.o
 __Lintentry 8 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\byron\AppData\Local\Temp\xcAs16c4.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\byron\AppData\Local\Temp\xcAsgg4.o
 _PIE1bits 8C 0 ABS 0 - dist/default/production\SPI_S.X.production.o
 __pmaintext 1B8 0 CODE 0 maintext dist/default/production\SPI_S.X.production.o
 __Lcommon 0 0 ABS 0 common -
