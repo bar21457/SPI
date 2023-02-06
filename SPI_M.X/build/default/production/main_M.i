@@ -2919,10 +2919,13 @@ void main(void) {
            VAL2 = spiRead();
        }
 
-       if (VAL_W == 'C')
+       else if (VAL_W == 'C')
        {
            spiWrite(VAL_READ);
            CONT = spiRead();
+       }
+
+       else{
        }
 
        _delay((unsigned long)((1)*(4000000/4000.0)));

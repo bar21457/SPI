@@ -2835,13 +2835,15 @@ void readADC (uint8_t);
 void setup(void);
 
 int CONT;
-int FLAG_B;
+int FLAG_B = 0;
 uint8_t VAL_READ;
 
 void __attribute__((picinterrupt(("")))) isr(void){
+
    if(SSPIF == 1 && FLAG_B == 0)
    {
-        VAL_READ = spiRead();
+       readADC(0);
+       VAL_READ = spiRead();
         spiWrite('A');
         _delay((unsigned long)((1)*(4000000/4000.0)));
         VAL_READ = spiRead();
@@ -2850,7 +2852,8 @@ void __attribute__((picinterrupt(("")))) isr(void){
         SSPIF = 0;
     }
 
-   if(SSPIF == 1 && FLAG_B == 1){
+   if(SSPIF == 1 && FLAG_B == 1)
+   {
         VAL_READ = spiRead();
         spiWrite('C');
         _delay((unsigned long)((1)*(4000000/4000.0)));
@@ -2883,6 +2886,7 @@ void __attribute__((picinterrupt(("")))) isr(void){
         }
         INTCONbits.RBIF = 0;
     }
+   return;
 }
 
 void main(void) {
@@ -2892,7 +2896,8 @@ void main(void) {
     while(1)
     {
        readADC(0);
-       PORTD = CONT;
+       PORTD = ADRESH;
+       PORTE = CONT;
     }
     return;
 }
@@ -2907,9 +2912,11 @@ void setup (void){
 
     TRISB = 0b00000011;
     TRISD = 0;
+    TRISE = 0;
 
     PORTB = 0;
     PORTD = 0;
+    PORTE = 0;
 
     OPTION_REGbits.nRBPU = 0;
     WPUBbits.WPUB0 = 1;

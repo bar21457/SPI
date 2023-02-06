@@ -34,7 +34,7 @@ FOSC_500KHZ 3
 FOSC_250KHZ 2
 FOSC_125KHZ 1
 ]
-"192 C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+"195 C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
 [e E1349 . `uc
 FOSC_8MHZ 7
 FOSC_4MHZ 6
@@ -44,7 +44,7 @@ FOSC_500KHZ 3
 FOSC_250KHZ 2
 FOSC_125KHZ 1
 ]
-"200
+"203
 [e E1360 . `uc
 SPI_MASTER_OSC_DIV4 32
 SPI_MASTER_OSC_DIV16 33
@@ -109,7 +109,7 @@ SPI_ACTIVE_2_IDLE 64
 [v _spiRead spiRead `(uc  1 e 1 0 ]
 "60 C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
 [v _main main `(v  1 e 1 0 ]
-"181
+"184
 [v _setup setup `(v  1 e 1 0 ]
 "229 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h
 [v _PORTB PORTB `VEuc  1 e 1 @6 ]
@@ -257,7 +257,7 @@ SPI_ACTIVE_2_IDLE 64
 [v main@VAL1_D VAL1_D `uc  1 a 1 43 ]
 "68
 [v main@VAL1_U VAL1_U `uc  1 a 1 42 ]
-"176
+"179
 } 0
 "505 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
 [v _sprintf sprintf `(i  1 e 2 0 ]
@@ -321,10 +321,10 @@ SPI_ACTIVE_2_IDLE 64
 {
 "32
 } 0
-"181 C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
+"184 C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\main_M.c
 [v _setup setup `(v  1 e 1 0 ]
 {
-"202
+"205
 } 0
 "12 C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_M.X\configSPI.c
 [v _spiInit spiInit `(v  1 e 1 0 ]

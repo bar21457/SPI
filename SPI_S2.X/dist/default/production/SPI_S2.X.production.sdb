@@ -34,7 +34,7 @@ SPI_CLOCK_IDLE_LOW 0
 SPI_IDLE_2_ACTIVE 0
 SPI_ACTIVE_2_IDLE 64
 ]
-"145 C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S2.X\main_S2.c
+"152 C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S2.X\main_S2.c
 [e E1349 . `uc
 FOSC_8MHZ 7
 FOSC_4MHZ 6
@@ -44,7 +44,7 @@ FOSC_500KHZ 3
 FOSC_250KHZ 2
 FOSC_125KHZ 1
 ]
-"148
+"155
 [e E1360 . `uc
 SPI_MASTER_OSC_DIV4 32
 SPI_MASTER_OSC_DIV16 33
@@ -77,6 +77,7 @@ SPI_ACTIVE_2_IDLE 64
 [v _setupADC setupADC `(v  1 e 1 0 ]
 "49
 [v _readADC readADC `(v  1 e 1 0 ]
+[v i1_readADC readADC `(v  1 e 1 0 ]
 "11 C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S2.X\configINTOSC.c
 [v _setupINTOSC setupINTOSC `(v  1 e 1 0 ]
 "12 C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S2.X\configSPI.c
@@ -89,13 +90,13 @@ SPI_ACTIVE_2_IDLE 64
 [v _spiRead spiRead `(uc  1 e 1 0 ]
 "57 C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S2.X\main_S2.c
 [v _isr isr `II(v  1 e 1 0 ]
-"104
+"108
 [v _main main `(v  1 e 1 0 ]
-"119
+"124
 [v _setup setup `(v  1 e 1 0 ]
 "229 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h
 [v _PORTB PORTB `VEuc  1 e 1 @6 ]
-[s S377 . 1 `uc 1 RB0 1 0 :1:0 
+[s S378 . 1 `uc 1 RB0 1 0 :1:0 
 `uc 1 RB1 1 0 :1:1 
 `uc 1 RB2 1 0 :1:2 
 `uc 1 RB3 1 0 :1:3 
@@ -105,11 +106,13 @@ SPI_ACTIVE_2_IDLE 64
 `uc 1 RB7 1 0 :1:7 
 ]
 "246
-[u S386 . 1 `S377 1 . 1 0 ]
-[v _PORTBbits PORTBbits `VES386  1 e 1 @6 ]
+[u S387 . 1 `S378 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES387  1 e 1 @6 ]
 "353
 [v _PORTD PORTD `VEuc  1 e 1 @8 ]
-[s S345 . 1 `uc 1 RBIF 1 0 :1:0 
+"415
+[v _PORTE PORTE `VEuc  1 e 1 @9 ]
+[s S346 . 1 `uc 1 RBIF 1 0 :1:0 
 `uc 1 INTF 1 0 :1:1 
 `uc 1 T0IF 1 0 :1:2 
 `uc 1 RBIE 1 0 :1:3 
@@ -119,14 +122,14 @@ SPI_ACTIVE_2_IDLE 64
 `uc 1 GIE 1 0 :1:7 
 ]
 "483
-[s S354 . 1 `uc 1 . 1 0 :2:0 
+[s S355 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 TMR0IF 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 TMR0IE 1 0 :1:5 
 ]
-[u S359 . 1 `S345 1 . 1 0 `S354 1 . 1 0 ]
-[v _INTCONbits INTCONbits `VES359  1 e 1 @11 ]
-[s S462 . 1 `uc 1 TMR1IF 1 0 :1:0 
+[u S360 . 1 `S346 1 . 1 0 `S355 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES360  1 e 1 @11 ]
+[s S464 . 1 `uc 1 TMR1IF 1 0 :1:0 
 `uc 1 TMR2IF 1 0 :1:1 
 `uc 1 CCP1IF 1 0 :1:2 
 `uc 1 SSPIF 1 0 :1:3 
@@ -135,8 +138,8 @@ SPI_ACTIVE_2_IDLE 64
 `uc 1 ADIF 1 0 :1:6 
 ]
 "554
-[u S470 . 1 `S462 1 . 1 0 ]
-[v _PIR1bits PIR1bits `VES470  1 e 1 @12 ]
+[u S472 . 1 `S464 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES472  1 e 1 @12 ]
 "844
 [v _SSPBUF SSPBUF `VEuc  1 e 1 @19 ]
 "851
@@ -166,7 +169,7 @@ SPI_ACTIVE_2_IDLE 64
 ]
 [u S84 . 1 `S64 1 . 1 0 `S69 1 . 1 0 `S78 1 . 1 0 `S81 1 . 1 0 ]
 [v _ADCON0bits ADCON0bits `VES84  1 e 1 @31 ]
-[s S409 . 1 `uc 1 PS 1 0 :3:0 
+[s S411 . 1 `uc 1 PS 1 0 :3:0 
 `uc 1 PSA 1 0 :1:3 
 `uc 1 T0SE 1 0 :1:4 
 `uc 1 T0CS 1 0 :1:5 
@@ -174,12 +177,12 @@ SPI_ACTIVE_2_IDLE 64
 `uc 1 nRBPU 1 0 :1:7 
 ]
 "1367
-[s S416 . 1 `uc 1 PS0 1 0 :1:0 
+[s S418 . 1 `uc 1 PS0 1 0 :1:0 
 `uc 1 PS1 1 0 :1:1 
 `uc 1 PS2 1 0 :1:2 
 ]
-[u S420 . 1 `S409 1 . 1 0 `S416 1 . 1 0 ]
-[v _OPTION_REGbits OPTION_REGbits `VES420  1 e 1 @129 ]
+[u S422 . 1 `S411 1 . 1 0 `S418 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES422  1 e 1 @129 ]
 [s S22 . 1 `uc 1 TRISA0 1 0 :1:0 
 `uc 1 TRISA1 1 0 :1:1 
 `uc 1 TRISA2 1 0 :1:2 
@@ -196,7 +199,9 @@ SPI_ACTIVE_2_IDLE 64
 [v _TRISB TRISB `VEuc  1 e 1 @134 ]
 "1603
 [v _TRISD TRISD `VEuc  1 e 1 @136 ]
-[s S481 . 1 `uc 1 TMR1IE 1 0 :1:0 
+"1665
+[v _TRISE TRISE `VEuc  1 e 1 @137 ]
+[s S483 . 1 `uc 1 TMR1IE 1 0 :1:0 
 `uc 1 TMR2IE 1 0 :1:1 
 `uc 1 CCP1IE 1 0 :1:2 
 `uc 1 SSPIE 1 0 :1:3 
@@ -205,8 +210,8 @@ SPI_ACTIVE_2_IDLE 64
 `uc 1 ADIE 1 0 :1:6 
 ]
 "1719
-[u S489 . 1 `S481 1 . 1 0 ]
-[v _PIE1bits PIE1bits `VES489  1 e 1 @140 ]
+[u S491 . 1 `S483 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES491  1 e 1 @140 ]
 [s S177 . 1 `uc 1 SCS 1 0 :1:0 
 `uc 1 LTS 1 0 :1:1 
 `uc 1 HTS 1 0 :1:2 
@@ -266,10 +271,10 @@ SPI_ACTIVE_2_IDLE 64
 ]
 [u S270 . 1 `S230 1 . 1 0 `S239 1 . 1 0 `S244 1 . 1 0 `S250 1 . 1 0 `S255 1 . 1 0 `S260 1 . 1 0 `S265 1 . 1 0 ]
 [v _SSPSTATbits SSPSTATbits `VES270  1 e 1 @148 ]
-[s S435 . 1 `uc 1 WPUB 1 0 :8:0 
+[s S437 . 1 `uc 1 WPUB 1 0 :8:0 
 ]
 "2367
-[s S437 . 1 `uc 1 WPUB0 1 0 :1:0 
+[s S439 . 1 `uc 1 WPUB0 1 0 :1:0 
 `uc 1 WPUB1 1 0 :1:1 
 `uc 1 WPUB2 1 0 :1:2 
 `uc 1 WPUB3 1 0 :1:3 
@@ -278,8 +283,8 @@ SPI_ACTIVE_2_IDLE 64
 `uc 1 WPUB6 1 0 :1:6 
 `uc 1 WPUB7 1 0 :1:7 
 ]
-[u S446 . 1 `S435 1 . 1 0 `S437 1 . 1 0 ]
-[v _WPUBbits WPUBbits `VES446  1 e 1 @149 ]
+[u S448 . 1 `S437 1 . 1 0 `S439 1 . 1 0 ]
+[v _WPUBbits WPUBbits `VES448  1 e 1 @149 ]
 "2417
 [v _IOCB IOCB `VEuc  1 e 1 @150 ]
 [s S110 . 1 `uc 1 . 1 0 :4:0 
@@ -321,15 +326,15 @@ SPI_ACTIVE_2_IDLE 64
 [v _FLAG_B FLAG_B `i  1 e 2 0 ]
 "55
 [v _VAL_READ VAL_READ `uc  1 e 1 0 ]
-"104
+"108
 [v _main main `(v  1 e 1 0 ]
 {
-"114
-} 0
 "119
+} 0
+"124
 [v _setup setup `(v  1 e 1 0 ]
 {
-"150
+"157
 } 0
 "12 C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S2.X\configSPI.c
 [v _spiInit spiInit `(v  1 e 1 0 ]
@@ -373,7 +378,16 @@ SPI_ACTIVE_2_IDLE 64
 "57 C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S2.X\main_S2.c
 [v _isr isr `II(v  1 e 1 0 ]
 {
-"102
+"106
+} 0
+"49 C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S2.X\configADC.c
+[v i1_readADC readADC `(v  1 e 1 0 ]
+{
+[v i1readADC@canal canal `uc  1 a 1 wreg ]
+[v i1readADC@canal canal `uc  1 a 1 wreg ]
+"51
+[v i1readADC@canal canal `uc  1 a 1 2 ]
+"75
 } 0
 "34 C:\Users\byron\OneDrive\Documents\GitHub\SPI\SPI_S2.X\configSPI.c
 [v _spiWrite spiWrite `(v  1 e 1 0 ]

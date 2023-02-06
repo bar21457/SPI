@@ -51,13 +51,15 @@
 void setup(void);
 
 int CONT;
-int FLAG_B;
+int FLAG_B = 0;
 uint8_t VAL_READ;
 
 void __interrupt() isr(void){
+    
    if(SSPIF == 1 && FLAG_B == 0)
    {
-        VAL_READ = spiRead();
+       readADC(0); 
+       VAL_READ = spiRead();
         spiWrite('A');
         __delay_ms(1);
         VAL_READ = spiRead();
@@ -66,7 +68,8 @@ void __interrupt() isr(void){
         SSPIF = 0;
     }
    
-   if(SSPIF == 1 && FLAG_B == 1){
+   if(SSPIF == 1 && FLAG_B == 1)
+   {
         VAL_READ = spiRead();
         spiWrite('C');
         __delay_ms(1);
@@ -99,6 +102,7 @@ void __interrupt() isr(void){
         }
         INTCONbits.RBIF = 0; // Bajamos la bandera de interrupción del PORTB
     }
+   return;
 }
 
 void main(void) {
@@ -108,7 +112,8 @@ void main(void) {
     while(1)
     {
        readADC(0);
-       PORTD = CONT;
+       PORTD = ADRESH;
+       PORTE = CONT;
     }
     return;
 }
@@ -123,9 +128,11 @@ void setup (void){
 
     TRISB = 0b00000011;     //Configuración del PORTB como input
     TRISD = 0;              //Configuración del PORTD como output
+    TRISE = 0;              //Configuración del PORTE como output
 
     PORTB = 0;              //Limpiamos el PORTB
     PORTD = 0;              //Limpiamos el PORTD
+    PORTE = 0;              //Limpiamos el PORTE
     
     OPTION_REGbits.nRBPU = 0;   //Habilitamos los pull-ups del PORTB
     WPUBbits.WPUB0 = 1;         //Habilitamos el pull-up del RB0
